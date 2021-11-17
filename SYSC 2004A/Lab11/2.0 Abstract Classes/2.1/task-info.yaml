@@ -1,0 +1,106 @@
+type: output
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    import java.util.ArrayList;
+    import java.util.Arrays;
+    import java.util.List;
+
+    public class Main {
+       public static void main(String[] args) {
+          List<Shape> shapes = new ArrayList<>(
+                  Arrays.asList(new Circle(0.3),
+                          new Square(5.0),
+                          new Rectangle(5.0, 2.0)
+                  )
+          );
+
+          for (Shape s : shapes) {
+             System.out.println(s.area());
+          }
+       }
+    }
+  learner_created: false
+- name: test/output.txt
+  visible: false
+  text: |
+    0.2827433388230814
+    25.0
+    10.0
+  learner_created: false
+- name: src/Shape.java
+  visible: true
+  text: |-
+    public abstract class Shape {
+        public abstract double area();
+    }
+  learner_created: false
+- name: src/Circle.java
+  visible: true
+  text: |-
+    public class Circle extends Shape {
+        private final double radius;
+
+        public Circle(double radius) {
+            this.radius = radius;
+        }
+
+        public double area() {
+            return Math.PI * (radius * radius);
+        }
+    }
+  learner_created: false
+- name: src/Rectangle.java
+  visible: true
+  text: |-
+    public class Rectangle extends Shape {
+        private final double length;
+        private final double width;
+
+        Rectangle(double length, double width) {
+            this.length = length;
+            this.width = width;
+        }
+
+        public double area() {
+            return length * width;
+        }
+    }
+  learner_created: false
+- name: src/Square.java
+  visible: true
+  placeholders:
+  - offset: 28
+    length: 9
+    placeholder_text: /* TODO */
+    initial_state:
+      length: 10
+      offset: 28
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: Rectangle
+  - offset: 112
+    length: 1
+    placeholder_text: /* TODO */
+    initial_state:
+      length: 10
+      offset: 45
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |-
+      public Square(double side) {
+              super(side, side);
+          }
+  text: |
+    public class Square extends /* TODO */ {
+        /* TODO */
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 06 Apr 2021 03:04:39 UTC
+record: -1

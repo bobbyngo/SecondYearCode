@@ -1,0 +1,131 @@
+type: output
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public class Main {
+
+       // no touch
+       public static int generateHash(String data) {
+          int hash = (int) (2004L ^ (2004L >>> 32));
+          hash = 31 * hash + data.hashCode();
+          return hash;
+       }
+
+       public static void main(String[] args) {
+
+          // do not modify ... make the errors go away by editing Block.java
+          Block<String> b1 = new Block<>(generateHash("450570001234"), "450570001234");
+          Block<Double> b2 = new Block<>(generateHash(String.valueOf(45.0)), 45.0);
+          Block<Boolean> b3 = new Block<>(generateHash(String.valueOf(false)), false);
+
+          b2.setNextBlock(b1);
+          b3.setNextBlock(b2);
+
+          Block<?> block = b3;
+          while (block != null) {
+             System.out.println(block.getData());
+             block = block.getNextBlock();
+          }
+       }
+    }
+  learner_created: false
+- name: test/output.txt
+  visible: false
+  text: |
+    false
+    45.0
+    450570001234
+  learner_created: false
+- name: src/Block.java
+  visible: true
+  placeholders:
+  - offset: 123
+    length: 121
+    placeholder_text: '/* TODO : CONSTRUCTOR */'
+    initial_state:
+      length: 24
+      offset: 123
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |-
+      public Block(int hash, T data) {
+              this.hash = hash;
+              this.data = data;
+          }
+  - offset: 250
+    length: 86
+    placeholder_text: '/* TODO : getData() */'
+    initial_state:
+      length: 22
+      offset: 153
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |-
+      public T getData() {
+              return this.data;
+          }
+  - offset: 336
+    length: 127
+    placeholder_text: '/* TODO : setNextBlock() */'
+    initial_state:
+      length: 27
+      offset: 181
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: |-
+      public void setNextBlock(Block<?> nextBlock) {
+              this.nextBlock = nextBlock;
+          }
+  - offset: 463
+    length: 88
+    placeholder_text: '/* TODO : getHash() */'
+    initial_state:
+      length: 22
+      offset: 214
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |-
+      public int getHash() {
+              return this.hash;
+          }
+  - offset: 551
+    length: 103
+    placeholder_text: '/* TODO : getNextBlock() */'
+    initial_state:
+      length: 27
+      offset: 242
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |-
+      public Block<?> getNextBlock() {
+              return this.nextBlock;
+          }
+  text: |-
+    public class Block<T> {
+
+        private final int hash;
+        private final T data;
+        private Block<?> nextBlock = null;
+
+        /* TODO : CONSTRUCTOR */
+
+        /* TODO : getData() */
+
+        /* TODO : setNextBlock() */
+
+        /* TODO : getHash() */
+
+        /* TODO : getNextBlock() */
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 11 Mar 2021 01:23:54 UTC
+record: -1

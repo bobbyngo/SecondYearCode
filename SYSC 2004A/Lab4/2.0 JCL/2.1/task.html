@@ -1,0 +1,82 @@
+<html>
+<head>
+    <style type ="text/css">
+       .footer{
+           position: fixed;
+           text-align: left;
+           line-height: 1.5;
+           bottom: 0px;
+           left: 5px;
+           width: 100%;
+       }
+        </style>
+    <style type ="text/css">
+       .body {
+           padding-bottom: 50px;
+       }
+    </style>
+</head>
+<body>
+<div class="body">
+    <h1>Lab 4 - JCL, Packages, Javadoc</h1>
+    <p>Authors: <strong>Martin Klamrowski</strong>, <strong>Cristina Ruiz Martin</strong></p>
+    <!--<p>Relevant textbook reading - <strong>Chapters 6, 7</strong> (Think Java)</p>-->
+    <h3>~2.0 JCL~</h3>
+    <p>
+        The Java Class Library contains a plethora of built-in classes and interfaces. We have already seen a number of
+        these such as String, Iterator, ArrayList, and arrays.
+    </p>
+    <p>
+        This section will serve as an introduction to some popular packages from the JCL.
+    </p>
+    <h3>~Task 2.1~</h3>
+    <p>
+        A very useful class is the Scanner class. Scanner belongs to the util package, which contains some other useful
+        classes that we already know. Scanner can be used to read input from the console.
+    </p>
+    <p>
+        Read the docs for Scanner here:
+        <a href="https://docs.oracle.com/javase/7/docs/api/java/util/Scanner.html">Oracle Docs: Scanner</a>. As you may
+        have noticed, many tasks refer you to Oracle Documentation if you are stuck.
+        <i>
+            It is important to begin familiarizing yourself with the Java documentation, and learning how to extract the
+            information you need from these extensive resources.
+        </i>
+    </p>
+    <ol>
+        <li>
+            In <code>one.one.Main.java</code> import the Scanner class so that it can be used. Create a new Scanner in the
+            <code>main()</code> method.
+            <div class="hint">
+                To read from console we need to provide the Scanner constructor with the <code>System.in</code> InputStream:
+                <code>new Scanner(System.in)</code>. And that is it! We do not need to worry about the details of how
+                this works because it is all abstracted away for us!
+            </div>
+        </li>
+        <li>
+            Go into the Scanner documentation and find a method that we can use to read a single line of text from
+            console.
+        </li>
+        <li>
+            Read a single line from console and store it in a variable.
+        </li>
+        <li>
+            Echo the line back to console (print it!).
+        </li>
+    </ol>
+    <p>
+        <i>
+            Note: to be able to type in the terminal you need to run one.one.Main.main() by clicking the small green arrow to
+            the left of the main method signature.
+        </i>
+    </p>
+</div>
+
+</body>
+<div class="footer">
+    <p>
+        <!--<strong>Try it!</strong>-->
+    </p>
+</div>
+
+</html>

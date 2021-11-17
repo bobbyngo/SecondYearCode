@@ -1,0 +1,8 @@
+Diagnosable.java
+ Diagnosable
+Virus.java
+ Virus
+Main.java
+ Main
+CoronaVirus.java
+ CoronaVirus

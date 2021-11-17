@@ -1,0 +1,72 @@
+<html>
+<head>
+    <style type ="text/css">
+       .footer{
+           position: fixed;
+           text-align: left;
+           line-height: 1.5;
+           bottom: 0px;
+           left: 5px;
+           width: 100%;
+       }
+        </style>
+    <style type ="text/css">
+       .body {
+           padding-bottom: 200px;
+       }
+    </style>
+</head>
+<body>
+<div class="body">
+    <h1>Lab 9 - Introduction to Swing GUIs</h1>
+    <p>Authors: <strong>Martin Klamrowski</strong>, <strong>Cristina Ruiz Martin</strong></p>
+    <!--    <p>Relevant textbook reading - <strong>Chapter 1, 7</strong> (The Object Oriented Thought Process)</p>-->
+    <h3>~3.0 Listeners~</h3>
+    <p>
+        Visuals are great, but how do we add some functionality to an application? This is generally implemented using
+        listeners. This section provides an introduction on how to use them.
+    </p>
+    <h3>~Task 3.1~</h3>
+    <p>
+        The first listener to be aware of is the ActionListener. It is common to attach an ActionListener to a JButton.
+        By doing this we can define behaviour that will happen when the JButton is clicked.
+    </p>
+    <p>
+        In <code>Main.java</code> there is a method called <code>getColourButton()</code> which returns a JButton in
+        the form we want. You should try to do this for any standard components that appear many times in your
+        application. In this way you aren't writing a 3000-line <code>main()</code> or <code>displayGUI()</code> method.
+    </p>
+    <p>
+        You are probably wondering what the code below does. The first line is simple: we are adding a new
+        ActionListener object. The next part is the creation of an anonymous inner class. It is called anonymous because
+        it is not declared as a class usually is (<code>class MyClass {}</code>), and therefore has no name. Basically,
+        what is happening is a subclass of ActionListener is being created, and we are giving this anonymous subclass
+        an overriding method for the superclass' method <code>actionPerformed()</code>. <code>actionPerformed()</code>
+        is what gets called under the hood when an event occurs (such as a button click).
+    </p>
+    <p>
+        Be careful! Within the context of the anonymous inner class, <code>this</code> no longer refers to the outer
+        class!
+    </p>
+    <pre>
+button.addActionListener(new ActionListener() {
+    @Override
+    public void actionPerformed(ActionEvent ae) {
+        System.out.println("AHHHH");
+    }
+});
+    </pre>
+    <p>
+        For this task, you must add a few JButtons to the <code>bodyPanel</code>.
+    </p>
+</div>
+
+</body>
+<!--<div class="footer">-->
+<!--    <p>-->
+<!--        <strong>Question:</strong> After the <code>.java</code> files are compiled into <code>.class</code> files-->
+<!--        (bytecode), what is the next step?-->
+<!--    </p>-->
+<!--</div>-->
+
+</html>

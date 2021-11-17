@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="#JAVA_INTERNAL" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/1.0 JFrame/1.1" />
+            <option value="$PROJECT_DIR$/1.0 JFrame/1.2" />
+            <option value="$PROJECT_DIR$/2.0 Layouts/2.1" />
+            <option value="$PROJECT_DIR$/2.0 Layouts/2.2" />
+            <option value="$PROJECT_DIR$/2.0 Layouts/2.3" />
+            <option value="$PROJECT_DIR$/2.0 Layouts/2.4" />
+            <option value="$PROJECT_DIR$/2.0 Layouts/2.5" />
+            <option value="$PROJECT_DIR$/2.0 Layouts/2.6" />
+            <option value="$PROJECT_DIR$/3.0 Listeners/3.1" />
+            <option value="$PROJECT_DIR$/3.0 Listeners/3.2" />
+            <option value="$PROJECT_DIR$/4.0 Lab Problem/4.1" />
+            <option value="$PROJECT_DIR$/util" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

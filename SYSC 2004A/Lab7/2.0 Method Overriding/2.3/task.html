@@ -1,0 +1,67 @@
+<html>
+<head>
+    <style type ="text/css">
+       .footer{
+           position: fixed;
+           text-align: left;
+           line-height: 1.5;
+           bottom: 0px;
+           left: 5px;
+           width: 100%;
+       }
+        </style>
+    <style type ="text/css">
+       .body {
+           padding-bottom: 200px;
+       }
+    </style>
+</head>
+<body>
+<div class="body">
+    <h1>Lab 7 - Polymorphism</h1>
+    <p>Authors: <strong>Martin Klamrowski</strong>, <strong>Cristina Ruiz Martin</strong></p>
+    <p>Relevant textbook reading - <strong>Chapter 1, 7</strong> (The Object Oriented Thought Process)</p>
+    <h3>~2.0 Method Overriding~</h3>
+    <p>
+        As mentioned in Lab 6, polymorphism in Java can be achieved by overriding and overloading methods. This section
+        will take a close look at method overriding.
+    </p>
+    <h3>~Task 2.3~</h3>
+    <p>
+        You may have noticed we have started using the <code>@Override</code> annotation above overridden methods. This
+        is not always necessary (depending on the compiler it may be), but in general it is good to add because
+        it tells the compiler that the method below is intended to override another method. This is a foolproof way to
+        actually ensure that a method is properly overridden.
+    </p>
+    <p>
+        The rules for overriding in Java are as follows:
+    </p>
+    <ul>
+        <li>
+            The overriding method must have the same return type (it can also use a subtype of the overridden method's
+            return type, called covariant returns).
+        </li>
+        <li>
+            The overriding method must take the same arguments and have the same name.
+        </li>
+        <li>
+            The overriding method cannot use a more restrictive access specifier.
+        </li>
+        <li>
+            Method overriding can only be done by a subclass on methods from superclasses.
+        </li>
+    </ul>
+    <p>
+        Answer the MC question below.
+    </p>
+</div>
+
+</body>
+<div class="footer">
+    <p>
+        <strong>Question:</strong> Given the classes included with this task, which of the
+        following method signatures are valid method overrides of <code>Dealer.sellCar()</code>?
+    </p>
+</div>
+
+</html>

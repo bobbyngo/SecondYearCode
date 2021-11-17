@@ -1,0 +1,53 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: ae, e, finally
+  is_correct: false
+- text: ae, npe, e, finally
+  is_correct: false
+- text: e, finally
+  is_correct: false
+- text: ae, finally
+  is_correct: true
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public class Main {
+       public static void main(String[] args) {
+
+          // a try-catch-finally block
+          int i = 0;
+          int diver = 0;
+
+          try {
+             i = i / diver;
+          } catch (ArithmeticException ae) {
+             System.err.println("ae");
+
+             try {
+                i = i / (diver - 1);
+             } catch (Exception e) {
+                System.err.println("e");
+             }
+
+          } catch (NullPointerException npe) {
+             System.err.println("npe");
+          } catch (Exception e) {
+             System.err.println("e");
+          } finally {
+             System.out.println("finally");
+             i = i + 1;
+          }
+       }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 16 Mar 2021 03:13:40 UTC
+record: -1
+selected_options:
+- 3

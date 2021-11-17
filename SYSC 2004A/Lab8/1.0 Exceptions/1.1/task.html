@@ -1,0 +1,71 @@
+<html>
+<head>
+    <style type ="text/css">
+       .footer{
+           position: fixed;
+           text-align: left;
+           line-height: 1.5;
+           bottom: 0px;
+           left: 5px;
+           width: 100%;
+       }
+        </style>
+    <style type ="text/css">
+       .body {
+           padding-bottom: 200px;
+       }
+    </style>
+</head>
+<body>
+<div class="body">
+    <h1>Lab 8 - Exceptions, Unit Tests</h1>
+    <p>Authors: <strong>Martin Klamrowski</strong>, <strong>Cristina Ruiz Martin</strong></p>
+    <p>
+        Relevant textbook reading - <strong>Chapter 3</strong> (The Object Oriented Thought Process),
+        <strong>Appendix D</strong> (Think Java 2e).
+    </p>
+    <h3>~1.0 Exceptions~</h3>
+    <p>
+        Knowing how to handle exceptions is exceptionally important to writing robust and stable applications. Large
+        systems are often riddled with areas where the state, control flow, or the results of an operation are
+        uncertain. It is important to anticipate these problem areas and handle them accordingly. This section details
+        some fundamentals on Exceptions in Java, and how to handle them.
+    </p>
+    <h3>~Task 1.1~</h3>
+    <p>
+        At the risk of sounding redundant, everything in Java is a class, this includes Exceptions.
+        <code>Exception</code> is a class from which all other exceptions are derived. It is worth mentioning that
+        in Java, there is a difference between <code>Exception</code> and <code>Error</code>. <code>Exception</code>
+        and <code>Error</code> are the two subclasses of <code>Throwable</code>. Basically, <code>Exception</code>
+        is a not-so-serious problem with the code, and <code>Error</code> is a very-serious problem with the code. We
+        can use and handle the former, but the latter should not be handled, and should be fixed outright.
+    </p>
+    <p>
+        See if you can make the code in <code>Main.java</code> throw three different types of exceptions (not errors).
+    </p>
+    <div class="hint">
+        In IntelliJ, you can check what kind of exceptions a method might throw by hovering over it with your mouse, or
+        putting your cursor on it and pressing Ctrl + Q.
+    </div>
+    <div class="hint">
+        If you call <code>it.set()</code> before <code>it.next()</code> the code will throw an
+        <code>IllegalStateException</code>.
+    </div>
+    <div class="hint">
+        You can create a <code>NullPointerException</code> by passing <code>null</code> to the method.
+    </div>
+    <div class="hint">
+        If you remove the parameterization of the List argument and ListIterator you will get a
+        <code>ClassCastException</code> if you attempt to cast <code>it.next()</code> to a <code>Double</code>.
+    </div>
+</div>
+
+</body>
+<!--<div class="footer">-->
+<!--    <p>-->
+<!--        <strong>Question:</strong> After the <code>.java</code> files are compiled into <code>.class</code> files-->
+<!--        (bytecode), what is the next step?-->
+<!--    </p>-->
+<!--</div>-->
+
+</html>

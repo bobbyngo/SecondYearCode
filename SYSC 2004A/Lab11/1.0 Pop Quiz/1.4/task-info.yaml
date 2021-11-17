@@ -1,0 +1,31 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Probably not.
+  is_correct: true
+- text: Yes, because abstract classes can still be instantiated while interfaces cannot.
+  is_correct: false
+- text: Yes, because the multiple inheritance enabled by interfaces should be avoided.
+  is_correct: false
+- text: Yes, because abstract classes can extend other abstract classes or interfaces,
+    while an interface cannot extend or implement another interface.
+  is_correct: false
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public class Main {
+       public static void main(String[] args) {
+          // :)
+       }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 06 Apr 2021 02:49:29 UTC
+record: -1
+selected_options:
+- 0

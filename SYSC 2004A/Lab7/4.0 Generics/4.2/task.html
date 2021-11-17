@@ -1,0 +1,82 @@
+<html>
+<head>
+    <style type ="text/css">
+       .footer{
+           position: fixed;
+           text-align: left;
+           line-height: 1.5;
+           bottom: 0px;
+           left: 5px;
+           width: 100%;
+       }
+        </style>
+    <style type ="text/css">
+       .body {
+           padding-bottom: 200px;
+       }
+    </style>
+</head>
+<body>
+<div class="body">
+    <h1>Lab 7 - Polymorphism</h1>
+    <p>Authors: <strong>Martin Klamrowski</strong>, <strong>Cristina Ruiz Martin</strong></p>
+    <p>Relevant textbook reading - <strong>Chapter 1, 7</strong> (The Object Oriented Thought Process)</p>
+    <h3>~4.0 Generics~</h3>
+    <p>
+        This section will cover the basics of parameterization, parameterized types, generic types and generics in Java.
+    </p>
+    <h3>~Task 4.2~</h3>
+    <p>
+        As an aside, please note that the information on generics provided in this lab is relatively narrow. There are
+        more ways to incorporate generics and parameterization in Java, such as
+        <a href="https://docs.oracle.com/javase/tutorial/extra/generics/wildcards.html">wildcards</a>, multi-generics,
+        bounded generics, and generic methods (<- wow!). These are advanced concepts and should be considered beyond
+        the scope of the course. However, you should understand roughly what is happening when you instantiate a
+        parameterized type like ArrayList.
+    </p>
+    <p>
+        You are going to write a simple generic class now. The file (<code>Block.java</code>) is provided and started
+        for you.
+    </p>
+    <p>
+        Complete <code>Block.java</code> such that the errors in <code>Main.java</code> go away, and the correct output
+        is produced (you get "Correct" when pressing the Check button).
+    </p>
+    <p>
+        If it is not clear from the code, you need to implement methods (and a constructor) accordingly in the Block
+        class. In addition to the shown methods, you need a <code>getHash()</code> method to return the Block's
+        <code>hash</code>.
+    </p>
+    <p>
+        A brief explanation of some strange things you likely noticed in <code>Main.java</code> and
+        <code>Block.java</code>:
+    </p>
+    <ul>
+        <li>
+            <code>&lt;T&gt;</code> : Remember, this is just a placeholder. We can call our parameter type anything. But
+            by convention we use one of E, T, K, V. We have seen E in ArrayList, which denotes we have a parameterized
+            element type (collection). T denotes an object type. Our class is holding a single object of variable type,
+            so we use T.
+        </li>
+        <li>
+            <code>&lt;?&gt;</code> : This is a wildcard type! We are saying that we do not know what type to expect.
+            Why do we need it? We need it because a Block can hold any type of object, and there is no way for us to
+            easily determine what the next Block is parameterized to.
+            Note: you will need to use it in your solution to <code>Block.java</code>.
+        </li>
+        <li>
+            <code>2004L</code> : If you are curious, this is just a long literal.
+        </li>
+    </ul>
+
+</div>
+
+</body>
+<!--<div class="footer">-->
+<!--    <p>-->
+<!--        <strong>Question:</strong> Given the code in <code>Main.java</code>, what could you change to detect the-->
+<!--        problem with the code? I.e., how can we help the compiler find the problem with the code?-->
+<!--    </p>-->
+<!--</div>-->
+
+</html>

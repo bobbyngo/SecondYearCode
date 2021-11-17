@@ -1,0 +1,29 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: They are both used to define a contract for an implementing class to follow.
+  is_correct: true
+- text: They are both ways to define a type that permits multiple implementations.
+  is_correct: true
+- text: They are conceptually the same, and the only differences are technical (code-level).
+  is_correct: false
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public class Main {
+       public static void main(String[] args) {
+          // nothing
+       }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 06 Apr 2021 02:29:46 UTC
+record: -1
+selected_options:
+- 0
+- 1

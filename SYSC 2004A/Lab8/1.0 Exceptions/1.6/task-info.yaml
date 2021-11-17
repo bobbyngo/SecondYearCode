@@ -1,0 +1,36 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: ArithmeticException
+  is_correct: true
+- text: MyCustomException
+  is_correct: false
+- text: IndexOutOfBoundsException
+  is_correct: true
+- text: TimeoutException
+  is_correct: false
+- text: NullPointerException
+  is_correct: true
+- text: IOException
+  is_correct: false
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public class Main {
+       public static void main(String[] args) {
+          // Write your solution here
+       }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 16 Mar 2021 14:58:54 UTC
+record: -1
+selected_options:
+- 0
+- 4
+- 2

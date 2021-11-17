@@ -1,0 +1,88 @@
+<html>
+<head>
+    <style type ="text/css">
+       .footer{
+           position: fixed;
+           text-align: left;
+           line-height: 1.5;
+           bottom: 0px;
+           left: 5px;
+           width: 100%;
+       }
+        </style>
+    <style type ="text/css">
+       .body {
+           padding-bottom: 200px;
+       }
+    </style>
+</head>
+<body>
+<div class="body">
+    <h1>Lab 11 - Interfaces and Abstract Classes</h1>
+    <p>Authors: <strong>Martin Klamrowski</strong>, <strong>Cristina Ruiz Martin</strong></p>
+    <p>Relevant textbook reading - <strong>Chapter 8</strong> (The Object Oriented Thought Process)</p>
+    <h3>~1.0 Pop Quiz~</h3>
+    <p>
+        Welcome to Lab 11, the most important lab of the course! This lab looks at the basics of interfaces and
+        abstract classes.
+    </p>
+    <h3>~Task 1.5~</h3>
+    <p>
+        So when should you use an interface over an abstract class? Or vice-versa? When you are writing your
+        applications and deciding what types to break your system down into, try to stick to the following guidelines:
+    </p>
+    <ul>
+        <li>
+            If you are attempting to describe something a type is capable of; i.e., objects of this type
+            <u>must be able to</u> "do this", use an interface. In other words, if objects of this type must fulfill a
+            <strong>role</strong>, implement that role as an <code>interface</code>.
+            <br>
+            Ex:
+            <ul>
+                <li>
+                    If you go down the ArrayList, LinkedList, HashSet (etc.) rabbit-hole, you will find they are all
+                    derived from the Iterable interface. This makes sense because generally we want our data structures
+                    to be traversable in some way, and we do not want to have to figure out how to do that for every
+                    type of collection we use. So we unify this functionality under a single interface called Iterable!
+                </li>
+                <li>
+                    In Section 3.0, Virus implements a Diagnosable interface. Why? Well, this makes sense in theory
+                    because a Virus is a condition that has symptoms and stages, and so we can diagnose it. As such, we
+                    would like to define a contract (a framework) for working with Diagnosable types in our application.
+                </li>
+                <li>
+                    In Section 4.0, you will be modifying the Post class from an earlier lab. You will be turning this
+                    class into an interface that will define a contract for any type that wants to be "Postable". This
+                    also fits with our goal of using interfaces to define roles.
+                </li>
+            </ul>
+        </li>
+        <br>
+        <li>
+            If you are attempting to model an idea of what objects of a type should roughly look like, implement that
+            as an <code>abstract class</code>. I.e., use an abstract class if the relationships between this abstract
+            type and derived classes are more of a "typical inheritance" relationship -- an <strong>is-a</strong>
+            relationship.
+            <br>
+            Ex:
+            <ul>
+                <li>
+                    In Section 2.0, you will see an abstract class called Shape. When we define an abstract class, we
+                    are saying that all "Shapes" have these attributes and functions in common. But there is no such
+                    thing as a Shape, a Shape is an abstract concept. And so, a Shape cannot be created, but it can be
+                    extended.
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</div>
+
+</body>
+<!--<div class="footer">-->
+<!--    <p>-->
+<!--        <strong>Question:</strong> Given the previous questions/answers, is there any reason to use a purely abstract-->
+<!--        abstract class?-->
+<!--    </p>-->
+<!--</div>-->
+</html>

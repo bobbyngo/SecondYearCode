@@ -1,0 +1,83 @@
+<html>
+<head>
+    <style type ="text/css">
+       .footer{
+           position: fixed;
+           text-align: left;
+           line-height: 1.5;
+           bottom: 0px;
+           left: 5px;
+           width: 100%;
+       }
+        </style>
+    <style type ="text/css">
+       .body {
+           padding-bottom: 200px;
+       }
+    </style>
+</head>
+<body>
+<div class="body">
+    <h1>Lab 9 - Introduction to Swing GUIs</h1>
+    <p>Authors: <strong>Martin Klamrowski</strong>, <strong>Cristina Ruiz Martin</strong></p>
+    <!--    <p>Relevant textbook reading - <strong>Chapter 1, 7</strong> (The Object Oriented Thought Process)</p>-->
+    <h3>~2.0 Layouts~</h3>
+    <p>
+        Layouts are the most important part of a Swing application. They determine how your application will look, and
+        function. Complete this section to find out about how to manage the placement of components in your application.
+    </p>
+    <h3>~Task 2.1~</h3>
+    <p>
+        Our example does not look very good so far. The label is off-center and barely visible. How can we change this?
+        Using Layouts! Checkout the available layouts here:
+        <a href="https://docs.oracle.com/javase/tutorial/uiswing/layout/visual.html">Oracle Docs: Layout Managers</a>.
+    </p>
+    <p>
+        The default layout for a JFrame is the BorderLayout. So our frame is using a BorderLayout. Looking at the
+        documentation for BorderLayout, we can see the possible positions for components in this layout. To set the
+        position of a component when we add it, we must specify it in the call to <code>JFrame.add()</code>. An example
+        is shown in <code>Main.java</code>.
+    </p>
+    <p>
+        Important notes:
+    </p>
+    <ul>
+        <li>
+            Notice the call to <code>frame.setSize()</code> is removed. We have replaced it with a call to
+            <code>frame.pack()</code> farther down. In general, you should use <code>frame.pack()</code>. What
+            <code>frame.pack()</code> does is it "squishes" all the components together and sizes them to their
+            preferred size or greater. Where are these preferred sizes determined? Generally, through your layout
+            manager! More on this later!
+        </li>
+        <li>
+            The call to <code>frame.setResizeable()</code> has also been removed so we can resize our window.
+        </li>
+        <li>
+            Notice the import of java.awt.*. This is a needed package, but you should not concern yourself too much
+            with the details. In brief, Swing is built in part off of AWT. Specifically, the JWindow inheritance tree
+            (JFrame, for example).
+            <ul>
+                <li>
+                    <strong>IMPORTANT:</strong> finally we can see why it is a good idea to be explicit in your import
+                    statements. Try importing <code>java.awt.*</code> and <code>java.util.*</code>, and then creating
+                    a new List. We get a class clash; not good! You will likely run into this issue in the Lab Problem.
+                    Be explicit in your imports: it is fine to have many import statements.
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <p>
+        Make the appropriate additions to <code>Main.java</code> to add the JLabels to the frame such that they are
+        all visible.
+    </p>
+</div>
+
+</body>
+<!--<div class="footer">-->
+<!--    <p>-->
+<!--        <strong>Question:</strong> After the <code>.java</code> files are compiled into <code>.class</code> files-->
+<!--        (bytecode), what is the next step?-->
+<!--    </p>-->
+<!--</div>-->
+
+</html>

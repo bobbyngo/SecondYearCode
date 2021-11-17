@@ -1,0 +1,76 @@
+<html>
+<head>
+    <style type ="text/css">
+       .footer{
+           position: fixed;
+           text-align: left;
+           line-height: 1.5;
+           bottom: 0px;
+           left: 5px;
+           width: 100%;
+       }
+        </style>
+    <style type ="text/css">
+       .body {
+           padding-bottom: 200px;
+       }
+    </style>
+</head>
+<body>
+<div class="body">
+    <h1>Lab 7 - Polymorphism</h1>
+    <p>Authors: <strong>Martin Klamrowski</strong>, <strong>Cristina Ruiz Martin</strong></p>
+    <p>Relevant textbook reading - <strong>Chapter 1, 7</strong> (The Object Oriented Thought Process)</p>
+    <h3>~3.0 Method Overloading~</h3>
+    <p>
+        As mentioned in Lab 6, polymorphism in Java can be achieved by overriding and overloading methods. This section
+        will take a close look at method overloading.
+    </p>
+    <h3>~Task 3.1~</h3>
+    <p>
+        Method overloading is the other way to achieve polymorphism in Java. In this task, we have the car classes
+        from the previous section. Method overloading is useful when some function of a class should be able to use
+        different types of data.
+    </p>
+    <p>
+        For example, imagine a class <code>Bear</code> that has a method <code>eat()</code>. <code>Bear</code> might eat
+        <code>Honey</code>, or it might eat <code>Salmon</code>. It is unlikely that <code>Honey</code> and
+        <code>Salmon</code> share the same inheritance tree (unless you go all the way back to <code>Object</code>).
+        And so, there are three possible solutions to this problem:
+    </p>
+    <ol>
+        <li>
+            Make one method with a signature of - <code>eat(Object o)</code>
+        </li>
+        <li>
+            Make two methods with signatures of - <code>eat(Honey h)</code> and <code>eat(Salmon s)</code>
+        </li>
+        <li>
+            Make two methods with signatures of - <code>eatHoney(Honey h)</code> and <code>eatSalmon(Salmon s)</code>
+        </li>
+    </ol>
+    <p>
+        Which solution do you prefer?
+    </p>
+    <p>
+        Complete and/or modify <code>Main.java</code> in such a way that the following output is produced.
+    </p>
+    <p>
+        <code>
+            <br>
+            skis|KiaRio<br>
+            You really shouldn't.<br>
+            |123456<br>
+        </code>
+    </p>
+</div>
+
+</body>
+<!--<div class="footer">-->
+<!--    <p>-->
+<!--        <strong>Question:</strong> What needs to be added to <code>FordBronco.java</code> so that FordBronco goes-->
+<!--        "VROOM" instead of "Vroom"?-->
+<!--    </p>-->
+<!--</div>-->
+
+</html>

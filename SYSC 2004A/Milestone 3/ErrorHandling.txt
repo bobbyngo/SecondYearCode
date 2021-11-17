@@ -1,0 +1,17 @@
+Choose storeview: (Finished)
+Enter quit => error
+Enter random => error
+
+
+Enter command:
+Enter random stuff => need to have instruction or alert   (Finished)
+
+
+Add product and Remove product:
+not enter number: => error
+
+
+
+Add: Finished
+Remove product: Not done
+

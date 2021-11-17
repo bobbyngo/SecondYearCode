@@ -1,0 +1,59 @@
+type: theory
+files:
+- name: src/Main.java
+  visible: true
+  placeholders:
+  - offset: 506
+    length: 126
+    placeholder_text: /* TODO */
+    initial_state:
+      length: 10
+      offset: 181
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |-
+      try {
+               customThrower();
+            } catch (MyCustomException mce) {
+               System.err.println(mce);
+            }
+  text: |
+    public class Main {
+
+       // this is the method to modify
+       public static void customThrower() {
+       }
+
+       public static void main(String[] args) {
+          // run some tests here
+          /* TODO */
+       }
+    }
+  learner_created: false
+- name: src/MyCustomException.java
+  visible: true
+  placeholders:
+  - offset: 55
+    length: 87
+    placeholder_text: /* TODO */
+    initial_state:
+      length: 10
+      offset: 55
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |-
+      public MyCustomException(String message) {
+              super(message);
+          }
+  text: |
+    public class MyCustomException extends Exception {
+        /* TODO */
+    }
+  learner_created: false
+status: Solved
+feedback:
+  time: Tue, 16 Mar 2021 14:47:18 UTC
+record: -1
+post_submission_on_open: true

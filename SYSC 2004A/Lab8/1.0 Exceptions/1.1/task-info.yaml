@@ -1,0 +1,32 @@
+type: theory
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    import java.util.ArrayList;
+    import java.util.Arrays;
+    import java.util.ListIterator;
+    import java.util.List;
+
+    public class Main {
+
+       public static void method(List<String> strings) {
+          for (ListIterator<String> it = strings.listIterator(); it.hasNext();) {
+             if (it.next().equals("bad")) {
+                it.set("good");
+             }
+          }
+       }
+
+       public static void main(String[] args) {
+          List<String> strings = new ArrayList<>(Arrays.asList("i", "am", "bad", "code"));
+
+          method(strings);
+       }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  time: Tue, 16 Mar 2021 14:38:00 UTC
+record: -1
+post_submission_on_open: true

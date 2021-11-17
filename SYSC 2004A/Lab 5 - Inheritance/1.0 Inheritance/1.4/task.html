@@ -1,0 +1,67 @@
+<html>
+<head>
+    <style type ="text/css">
+       .footer{
+           position: fixed;
+           text-align: left;
+           line-height: 1.5;
+           bottom: 0px;
+           left: 5px;
+           width: 100%;
+       }
+        </style>
+    <style type ="text/css">
+       .body {
+           padding-bottom: 200px;
+       }
+    </style>
+</head>
+<body>
+<div class="body">
+    <h1>Lab 5 - Inheritance</h1>
+    <p>Authors: <strong>Martin Klamrowski</strong>, <strong>Cristina Ruiz Martin</strong></p>
+    <p>Relevant textbook reading - <strong>Chapter 7</strong> (The Object Oriented Thought Process)</p>
+    <h3>~1.0 Inheritance~</h3>
+    <p>
+        There is much to discuss when it comes to applying inheritance in your designs. This section will focus on
+        inheritance as a concept, and will look at the ways the Java language allows you to apply inheritance in
+        practice. It will not provide any recommendations on best practices because there
+        is no simple answer, and any revelations provided here would generally be lacking until the introduction of
+        interfaces and design patterns. Chapter 7 alludes to these issues briefly. However, you
+        can also do a quick search engine query for "<i>is composition better than inheritance</i>" if you are keen on
+        immersing yourself in this raging debate.
+    </p>
+    <p>
+        This is not to say inheritance is not important to the object oriented programming paradigm. Inheritance is the
+        fundamental principal that objects can share common behaviours and attributes, and that these characteristics
+        can be passed on by subclassing (inheriting) a superclass (parent class).
+    </p>
+    <h3>~Task 1.4~</h3>
+    <p>
+        So if a subclass cannot access its superclass' private members, does that mean a Corona object does not have
+        any of the fields currently defined in the Virus class?
+        Try it out!
+    </p>
+    <p>
+        Given the code for the Corona class below, answer the MC question.
+    </p>
+    <p>
+    <pre>
+    public class Corona extends Virus {
+        public void myCoronaMethod() {
+            System.out.println(family + " " + species);
+        }
+    }
+    </pre>
+    </p>
+
+</div>
+
+</body>
+<div class="footer">
+    <p>
+        <strong>Question:</strong> Assuming <code>Corona.java</code> looked as above, would there be an error?
+    </p>
+</div>
+
+</html>

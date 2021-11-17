@@ -1,0 +1,57 @@
+<html>
+<head>
+    <style type ="text/css">
+       .footer{
+           position: fixed;
+           text-align: left;
+           line-height: 1.5;
+           bottom: 0px;
+           left: 5px;
+           width: 100%;
+       }
+        </style>
+    <style type ="text/css">
+       .body {
+           padding-bottom: 200px;
+       }
+    </style>
+</head>
+<body>
+<div class="body">
+    <h1>Lab 8 - Exceptions, Unit Tests</h1>
+    <p>Authors: <strong>Martin Klamrowski</strong>, <strong>Cristina Ruiz Martin</strong></p>
+    <p>
+        Relevant textbook reading - <strong>Chapter 3</strong> (The Object Oriented Thought Process),
+        <strong>Appendix D</strong> (Think Java 2e).
+    </p>
+    <h3>~1.0 Exceptions~</h3>
+    <p>
+        Knowing how to handle exceptions is exceptionally important for writing robust and stable applications. Large
+        systems are often riddled with areas where the state, control flow, or the results of an operation are
+        uncertain. It is important to anticipate these problem areas and handle them accordingly. This section details
+        some fundamentals on Exceptions in Java, and how to handle them.
+    </p>
+    <h3>~Task 1.5~</h3>
+    <p>
+        It is also possible to create custom exceptions. To do this, you should extend one of <code>Exception</code>
+        or <code>RuntimeException</code> (more on this difference in Task 1.6).
+    </p>
+    <p>
+        Complete the <code>MyCustomException</code> class that is started for you. Then, change the
+        <code>customThrower</code> method in <code>Main.java</code> so that it throws a <code>MyCustomException</code>.
+        Make a try-catch block to handle it and print out the message in <code>main()</code>.
+    </p>
+    <p>
+        <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html">Oracle Docs: Exception</a>
+    </p>
+    <div class="hint">A very basic exception only requires a constructor that takes a String message.</div>
+</div>
+
+</body>
+<!--<div class="footer">-->
+<!--    <p>-->
+<!--        <strong>Question:</strong> What is the benefit of using <code>throws</code>?-->
+<!--    </p>-->
+<!--</div>-->
+
+</html>

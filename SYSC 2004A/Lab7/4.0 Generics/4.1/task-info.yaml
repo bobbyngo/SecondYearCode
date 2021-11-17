@@ -1,0 +1,175 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Parameterize <code>broncos</code> and <code>it</code> with <code>FordBronco</code>,
+    in that way the compiler will see that <code>cars</code> is not a suitable collection
+    to pass to the method. We could then remove the cast to <code>FordBronco</code>.
+  is_correct: true
+- text: Parameterize <code>broncos</code> and <code>it</code> with <code>Car</code>,
+    in this way the compiler will implicitly cast all of the elements in <code>broncos</code>
+    to Car objects. Then, if we remove the cast to <code>FordBronco</code>, the compiler
+    would be able to detect that we are using Car objects and not FordBronco objects
+    specifically.
+  is_correct: true
+- text: It depends on what the purpose of the method is. In general, all collections
+    should be parameterized so the compiler knows what element types to expect and
+    run-time exceptions can be avoided.
+  is_correct: true
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    import java.util.ArrayList;
+    import java.util.Arrays;
+    import java.util.Iterator;
+    import java.util.List;
+
+    public class Main {
+
+       public static void method(List broncos) {
+          for (Iterator it = broncos.iterator(); it.hasNext();) {
+             ((FordBronco)it.next()).loadUp(new KiaRio());
+          }
+       }
+
+
+       public static void main(String[] args) {
+
+          List<Car> cars = new ArrayList<>(Arrays.asList(new FordBronco(), new FordBronco(), new KiaRio()));
+
+          method(cars);
+       }
+    }
+  learner_created: false
+- name: src/Car.java
+  visible: true
+  text: |
+    public class Car {
+
+        private String cargo = "";
+
+        public void goes() {
+            System.out.println("Vroom");
+        }
+
+        /**
+         * A Car can take 1 item as cargo.
+         */
+        public boolean loadUp(String cargo) {
+            if (this.cargo.equals("")) {
+                this.cargo = cargo;
+                return true;
+            }
+            return false;
+        }
+
+        public String getCargo() {
+            return cargo;
+        }
+    }
+  learner_created: false
+- name: src/FordBronco.java
+  visible: true
+  text: |
+    public class FordBronco extends Car {
+
+        private KiaRio tow = null;
+
+        @Override
+        public void goes() {
+            System.out.println("VROOM");
+        }
+
+        /**
+         * A FordBronco can tow a KiaRio.
+         */
+        public boolean loadUp(KiaRio k) {
+            if (tow == null) {
+                tow = k;
+                return true;
+            }
+            return false;
+        }
+
+        /**
+         * A FordBronco can take cargo and tow a KiaRio.
+         */
+        public boolean loadUp(String cargo, KiaRio k) {
+            return super.loadUp(cargo) && loadUp(k);
+        }
+
+        @Override
+        public String getCargo() {
+            return super.getCargo() + "|" + ((tow == null) ? "" : "KiaRio");
+        }
+    }
+  learner_created: false
+- name: src/KiaRio.java
+  visible: true
+  text: |
+    public class KiaRio extends Car {
+        @Override
+        public void goes() {
+            System.out.println("Clunk");
+        }
+
+        /**
+         * You really shouldn't.
+         */
+        public boolean loadUp(String cargo) {
+            return false;
+        }
+
+        @Override
+        public String getCargo() {
+            return "You really shouldn't.";
+        }
+    }
+  learner_created: false
+- name: src/TeslaS.java
+  visible: true
+  text: |
+    public class TeslaS extends Car {
+
+        private String lawyersNumber = "";
+
+        @Override
+        public void goes() {
+            System.out.println("");
+        }
+
+        /**
+         * A TeslaS can take extra cargo in the form of a String.
+         */
+        public boolean loadUp(String lawyersNumber) {
+            if (this.lawyersNumber.equals("")) {
+                this.lawyersNumber = lawyersNumber;
+                return true;
+            }
+            return false;
+        }
+
+        /**
+         * A TeslaS can take extra cargo in the form of a String and cargo.
+         */
+        public boolean loadUp(String cargo, String lawyersNumber) {
+            return super.loadUp(cargo) && loadUp(lawyersNumber);
+        }
+
+        @Override
+        public String getCargo() {
+            return super.getCargo() + "|" + lawyersNumber;
+        }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 11 Mar 2021 01:12:55 UTC
+record: -1
+selected_options:
+- 0
+- 1
+- 2

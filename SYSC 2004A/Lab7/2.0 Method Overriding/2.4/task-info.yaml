@@ -1,0 +1,76 @@
+type: output
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public class Main {
+       public static void main(String[] args) {
+
+          Car c = new Car("batmobile", 1000000, 90);
+
+          System.out.println(c.toString());
+       }
+    }
+  learner_created: false
+- name: test/output.txt
+  visible: false
+  text: |
+    class Car batmobile 1000000.0 90.0
+  learner_created: false
+- name: src/Car.java
+  visible: true
+  placeholders:
+  - offset: 556
+    length: 189
+    placeholder_text: /* TODO */
+    initial_state:
+      length: 10
+      offset: 556
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |-
+      @Override
+          public String toString() {
+              return this.getClass().toString() +
+                      " " + getStyle() +
+                      " " + getPrice() +
+                      " " + getFuelEconomy();
+          }
+  text: |
+    public class Car {
+
+        private final String style;
+        private final double price;
+        private final double fuelEconomy;
+
+        public Car(String style, double price, double fuelEconomy) {
+            this.style = style;
+            this.price = price;
+            this.fuelEconomy = fuelEconomy;
+        }
+
+        public String getStyle() {
+            return style;
+        }
+
+        public double getPrice() {
+            return price;
+        }
+
+        public double getFuelEconomy() {
+            return fuelEconomy;
+        }
+
+        public void goes() {
+            System.out.println("Vroom");
+        }
+
+        /* TODO */
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 10 Mar 2021 22:12:10 UTC
+record: -1

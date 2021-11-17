@@ -1,0 +1,11 @@
+title: Lab 7 - Polymorphism
+language: English
+summary: SYSC2004 (WN2021) - Lab 7
+programming_language: Java
+content:
+- 1.0 How Java Works
+- 2.0 Method Overriding
+- 3.0 Method Overloading
+- 4.0 Generics
+- 5.0 Lab Problem
+mode: Study

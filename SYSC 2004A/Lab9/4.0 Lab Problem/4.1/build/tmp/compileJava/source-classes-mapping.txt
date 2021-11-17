@@ -1,0 +1,7 @@
+Main.java
+ Main
+PaletteGenerator.java
+ PaletteGenerator
+ PaletteGenerator$1
+ PaletteGenerator$2
+ PaletteGenerator$3

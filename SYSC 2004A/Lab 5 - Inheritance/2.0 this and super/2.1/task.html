@@ -1,0 +1,67 @@
+<html>
+<head>
+    <style type ="text/css">
+       .footer{
+           position: fixed;
+           text-align: left;
+           line-height: 1.5;
+           bottom: 0px;
+           left: 5px;
+           width: 100%;
+       }
+        </style>
+    <style type ="text/css">
+       .body {
+           padding-bottom: 200px;
+       }
+    </style>
+</head>
+<body>
+<div class="body">
+    <h1>Lab 5 - Inheritance</h1>
+    <p>Authors: <strong>Martin Klamrowski</strong>, <strong>Cristina Ruiz Martin</strong></p>
+    <p>Relevant textbook reading - <strong>Chapter 7</strong> (The Object Oriented Thought Process)</p>
+    <h3>~2.0 this and super~</h3>
+    <p>
+        <code>this</code> and <code>super</code> are a couple of handy reserved words in Java. We have already seen
+        <code>this</code> used fairly extensively, but have never discussed it. Conceptually they are simple to
+        understand, and that is what we will be doing in this section.
+    </p>
+    <h3>~Task 2.1~</h3>
+    <p>
+        <code>this</code> is a reserved word used to access the current object reference. What is the current object
+        reference? For example, if we call the method <code>evolve()</code> on a Virus object <code>v1</code>, within
+        the context of that method call "<code>this</code>" will refer to the calling object <code>v1</code>.
+        <code>this</code> is useful in situations where we do not have access to the current object's reference. The
+        three cases in which we need <code>this</code> are:
+    </p>
+    <ul>
+        <li>
+            When we need to disambiguate variables. Example: in the Virus constructor.
+        </li>
+        <li>
+            When we want to pass the current object reference to another method. Example:
+            <code>anObject.someMethod(this)</code>.
+        </li>
+        <li>
+            Constructor chaining. Example: consider the revised version of <code>Virus.java</code> with constructor
+            chaining. <i>Note: a call to </i><code>this()</code>
+            <i>must always be the first line in a constructor body.</i>
+        </li>
+    </ul>
+    <p>
+        Answer the MC question below.
+    </p>
+
+</div>
+
+</body>
+<div class="footer">
+    <p>
+        <strong>Question:</strong> What will be the output after the following line of code?
+        <br><br>
+        <code>Virus v1 = new Virus();</code>
+    </p>
+</div>
+
+</html>

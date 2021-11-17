@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lab8.iml" filepath="$PROJECT_DIR$/.idea/modules/Lab8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.1/Lab8.1.0_Exceptions-1.1.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.1/Lab8.1.0_Exceptions-1.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.1/Lab8.1.0_Exceptions-1.1.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.1/Lab8.1.0_Exceptions-1.1.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.1/Lab8.1.0_Exceptions-1.1.test.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.1/Lab8.1.0_Exceptions-1.1.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.2/Lab8.1.0_Exceptions-1.2.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.2/Lab8.1.0_Exceptions-1.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.2/Lab8.1.0_Exceptions-1.2.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.2/Lab8.1.0_Exceptions-1.2.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.2/Lab8.1.0_Exceptions-1.2.test.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.2/Lab8.1.0_Exceptions-1.2.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.3/Lab8.1.0_Exceptions-1.3.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.3/Lab8.1.0_Exceptions-1.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.3/Lab8.1.0_Exceptions-1.3.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.3/Lab8.1.0_Exceptions-1.3.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.3/Lab8.1.0_Exceptions-1.3.test.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.3/Lab8.1.0_Exceptions-1.3.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.4/Lab8.1.0_Exceptions-1.4.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.4/Lab8.1.0_Exceptions-1.4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.4/Lab8.1.0_Exceptions-1.4.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.4/Lab8.1.0_Exceptions-1.4.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.4/Lab8.1.0_Exceptions-1.4.test.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.4/Lab8.1.0_Exceptions-1.4.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.5/Lab8.1.0_Exceptions-1.5.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.5/Lab8.1.0_Exceptions-1.5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.5/Lab8.1.0_Exceptions-1.5.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.5/Lab8.1.0_Exceptions-1.5.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.5/Lab8.1.0_Exceptions-1.5.test.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.5/Lab8.1.0_Exceptions-1.5.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.6/Lab8.1.0_Exceptions-1.6.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.6/Lab8.1.0_Exceptions-1.6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.6/Lab8.1.0_Exceptions-1.6.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.6/Lab8.1.0_Exceptions-1.6.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.6/Lab8.1.0_Exceptions-1.6.test.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 Exceptions/1.6/Lab8.1.0_Exceptions-1.6.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2.0 JUnit/2.1/Lab8.2.0_JUnit-2.1.iml" filepath="$PROJECT_DIR$/.idea/modules/2.0 JUnit/2.1/Lab8.2.0_JUnit-2.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2.0 JUnit/2.1/Lab8.2.0_JUnit-2.1.main.iml" filepath="$PROJECT_DIR$/.idea/modules/2.0 JUnit/2.1/Lab8.2.0_JUnit-2.1.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2.0 JUnit/2.1/Lab8.2.0_JUnit-2.1.test.iml" filepath="$PROJECT_DIR$/.idea/modules/2.0 JUnit/2.1/Lab8.2.0_JUnit-2.1.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/3.0 Lab Problem/3.1/Lab8.3.0_Lab_Problem-3.1.iml" filepath="$PROJECT_DIR$/.idea/modules/3.0 Lab Problem/3.1/Lab8.3.0_Lab_Problem-3.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/3.0 Lab Problem/3.1/Lab8.3.0_Lab_Problem-3.1.main.iml" filepath="$PROJECT_DIR$/.idea/modules/3.0 Lab Problem/3.1/Lab8.3.0_Lab_Problem-3.1.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/3.0 Lab Problem/3.1/Lab8.3.0_Lab_Problem-3.1.test.iml" filepath="$PROJECT_DIR$/.idea/modules/3.0 Lab Problem/3.1/Lab8.3.0_Lab_Problem-3.1.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Lab8.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Lab8.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Lab8.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Lab8.util.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Lab8.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Lab8.util.test.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,100 @@
+type: theory
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public class Main {
+       public static void main(String[] args) {
+          // ... you can test here
+       }
+    }
+  learner_created: false
+- name: src/Virus.java
+  visible: true
+  text: |
+    public abstract class Virus implements Diagnosable {
+        private final double r0;
+
+        public Virus(double r0) {
+            this.r0 = r0;
+        }
+
+        public double getR0() {
+            return this.r0;
+        }
+
+        public abstract void evolve();
+    }
+  learner_created: false
+- name: src/Diagnosable.java
+  visible: true
+  text: |
+    public interface Diagnosable {
+        String[] getSymptoms();
+
+        void addSymptoms(String[] array);
+
+        void removeSymptoms(String[] array);
+
+        boolean isSymptomatic(String[] array);
+
+        int getStage(String[] array);
+    }
+  learner_created: false
+- name: src/CoronaVirus.java
+  visible: true
+  placeholders:
+  - offset: 781
+    length: 0
+    placeholder_text: /* TODO */
+    initial_state:
+      length: 10
+      offset: 297
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |-
+      public void evolve() {
+              return; // your particular implementation :)
+          }
+
+          public String[] getSymptoms() {
+              return null; // your particular implementation :)
+          }
+
+          public void addSymptoms(String[] array) {
+              return; // your particular implementation :)
+          }
+
+          public void removeSymptoms(String[] array) {
+              return; // your particular implementation :)
+          }
+
+          public boolean isSymptomatic(String[] array) {
+              return false; // your particular implementation :)
+          }
+
+          public int getStage(String[] array) {
+              return 0; // your particular implementation :)
+          }
+  text: |
+    import java.util.Arrays;
+    import java.util.HashSet;
+
+    public class CoronaVirus extends Virus {
+
+        private final HashSet<String> symptoms = new HashSet<>();
+
+        public CoronaVirus(double r0, String[] symptoms) {
+            super(r0);
+            this.symptoms.addAll(Arrays.asList(symptoms));
+        }
+
+        /* TODO */
+    }
+  learner_created: false
+status: Solved
+feedback:
+  time: Sat, 17 Apr 2021 00:46:39 UTC
+record: -1
+post_submission_on_open: true

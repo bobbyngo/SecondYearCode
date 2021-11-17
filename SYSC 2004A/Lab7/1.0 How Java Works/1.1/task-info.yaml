@@ -1,0 +1,31 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: The bytecode is then compiled into HTML and run by the OS.
+  is_correct: false
+- text: The bytecode is now executable (a .exe) and can be double-clicked and executed.
+  is_correct: false
+- text: The bytecode is passed onto the JVM which knows how to execute it.
+  is_correct: true
+- text: The bytecode can be opened in a Jupyter Notebook with a Java kernel and executed
+    from there.
+  is_correct: false
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public class Main {
+       public static void main(String[] args) {
+          // Write your solution here
+       }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 10 Mar 2021 17:41:19 UTC
+record: -1
+selected_options:
+- 2

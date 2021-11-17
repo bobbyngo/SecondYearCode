@@ -1,0 +1,66 @@
+<html>
+<head>
+    <style type ="text/css">
+       .footer{
+           position: fixed;
+           text-align: left;
+           line-height: 1.5;
+           bottom: 0px;
+           left: 5px;
+           width: 100%;
+       }
+        </style>
+    <style type ="text/css">
+       .body {
+           padding-bottom: 200px;
+       }
+    </style>
+</head>
+<body>
+<div class="body">
+    <h1>Lab 5 - Inheritance</h1>
+    <p>Authors: <strong>Martin Klamrowski</strong>, <strong>Cristina Ruiz Martin</strong></p>
+    <p>Relevant textbook reading - <strong>Chapter 7</strong> (The Object Oriented Thought Process)</p>
+    <h3>~1.0 Inheritance~</h3>
+    <p>
+        There is much to discuss when it comes to applying inheritance in your designs. This section will focus on
+        inheritance as a concept, and will look at the ways the Java language allows you to apply inheritance in
+        practice. It will not provide any recommendations on best practices because there
+        is no simple answer, and any revelations provided here would generally be lacking until the introduction of
+        interfaces and design patterns. Chapter 7 alludes to these issues briefly. However, you
+        can also do a quick search engine query for "<i>is composition better than inheritance</i>" if you are keen on
+        immersing yourself in this raging debate.
+    </p>
+    <p>
+        This is not to say inheritance is not important to the object oriented programming paradigm. Inheritance is the
+        fundamental principal that objects can share common behaviours and attributes, and that these characteristics
+        can be passed on by subclassing (inheriting) a superclass (parent class).
+    </p>
+    <h3>~Task 1.5~</h3>
+    <p>
+        That confirms it! In summary, a subclass will inherit all of its superclass' members (except constructors).
+        However, you may find conflicting information on this, saying that a subclass does not "inherit" private
+        members. Just remember, that the superclass' private members are there - they do exist in all instances of
+        the subclass. They just cannot be directly accessed outside of the containing class (because they are private!).
+        But if the superclass has a public/protected level accessor method for that private field, it can be accessed!
+        And so, depending on your definition, a subclass does "inherit" the private members of the superclass.
+    </p>
+    <p>
+        <i>Food for thought: Does this violate encapsulation?</i>
+    </p>
+    <p>
+        A demonstration of the above explanation is in <code>Main.java</code>; we modify the
+        <code>symptoms</code> field of a given Corona object without writing any code in <code>Corona.java</code>.
+    </p>
+
+
+</div>
+
+</body>
+<div class="footer">
+    <p>
+        <!--<strong></strong> Assuming <code>Corona.java</code> looked as above, would there be an error?-->
+    </p>
+</div>
+
+</html>

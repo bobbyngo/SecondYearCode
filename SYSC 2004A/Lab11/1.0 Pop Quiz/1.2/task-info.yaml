@@ -1,0 +1,31 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Interfaces describe behaviour that an implementing class must contain (a contract).
+    Abstract classes define common behaviour among similar (child) classes.
+  is_correct: true
+- text: Interfaces are used as a framework for communication between classes. Abstract
+    classes are used to define commonalities among derived classes.
+  is_correct: true
+- text: Conceptually, they are exactly the same and serve the same purpose.
+  is_correct: false
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public class Main {
+       public static void main(String[] args) {
+          // nothing
+       }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 06 Apr 2021 02:30:15 UTC
+record: -1
+selected_options:
+- 0
+- 1

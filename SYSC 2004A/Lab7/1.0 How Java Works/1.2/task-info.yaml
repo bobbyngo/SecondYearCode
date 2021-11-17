@@ -1,0 +1,30 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: Java Compiler
+  is_correct: true
+- text: Java Compiler, JVM Class Loader
+  is_correct: false
+- text: Java Compiler, JVM Class Loader, JVM Execution Engine
+  is_correct: false
+- text: Java Compiler, JVM Class Loader, JVM Execution Engine, OS
+  is_correct: false
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public class Main {
+       public static void main(String[] args) {
+          // Write your solution here
+       }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 10 Mar 2021 17:41:35 UTC
+record: -1
+selected_options:
+- 0

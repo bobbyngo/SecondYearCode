@@ -1,0 +1,74 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: In FordDealer - <code>private Car sellCar()</code>
+  is_correct: false
+- text: In FordDealer - <code>protected Car sellCar()</code>
+  is_correct: true
+- text: In FordDealer - <code>public Car sellCar()</code>
+  is_correct: true
+- text: In FordDealer - <code>protected Object sellCar()</code>
+  is_correct: false
+- text: In Dealer - <code>protected FordBronco sellCar()</code>
+  is_correct: false
+- text: In FordDealer - <code>protected FordBronco sellCar()</code>
+  is_correct: true
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public class Main {
+       public static void main(String[] args) {
+          // Write your solution here
+       }
+    }
+  learner_created: false
+- name: src/FordBronco.java
+  visible: true
+  text: |
+    public class FordBronco extends Car {
+        @Override
+        public void goes() {
+            System.out.println("VROOM");
+        }
+    }
+  learner_created: false
+- name: src/Car.java
+  visible: true
+  text: |
+    public class Car {
+        public void goes() {
+            System.out.println("Vroom");
+        }
+    }
+  learner_created: false
+- name: src/Dealer.java
+  visible: true
+  text: |
+    public class Dealer {
+
+        // ...
+
+        protected Car sellCar() {
+            return new Car();
+        }
+    }
+  learner_created: false
+- name: src/FordDealer.java
+  visible: true
+  text: |
+    public class FordDealer extends Dealer {
+
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 10 Mar 2021 19:19:21 UTC
+record: -1
+selected_options:
+- 1
+- 2
+- 5

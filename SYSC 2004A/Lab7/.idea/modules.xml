@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lab7.iml" filepath="$PROJECT_DIR$/.idea/modules/Lab7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 How Java Works/1.1/Lab7.1.0_How_Java_Works-1.1.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 How Java Works/1.1/Lab7.1.0_How_Java_Works-1.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 How Java Works/1.1/Lab7.1.0_How_Java_Works-1.1.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 How Java Works/1.1/Lab7.1.0_How_Java_Works-1.1.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 How Java Works/1.1/Lab7.1.0_How_Java_Works-1.1.test.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 How Java Works/1.1/Lab7.1.0_How_Java_Works-1.1.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 How Java Works/1.2/Lab7.1.0_How_Java_Works-1.2.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 How Java Works/1.2/Lab7.1.0_How_Java_Works-1.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 How Java Works/1.2/Lab7.1.0_How_Java_Works-1.2.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 How Java Works/1.2/Lab7.1.0_How_Java_Works-1.2.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 How Java Works/1.2/Lab7.1.0_How_Java_Works-1.2.test.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 How Java Works/1.2/Lab7.1.0_How_Java_Works-1.2.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 How Java Works/1.3/Lab7.1.0_How_Java_Works-1.3.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 How Java Works/1.3/Lab7.1.0_How_Java_Works-1.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 How Java Works/1.3/Lab7.1.0_How_Java_Works-1.3.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 How Java Works/1.3/Lab7.1.0_How_Java_Works-1.3.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1.0 How Java Works/1.3/Lab7.1.0_How_Java_Works-1.3.test.iml" filepath="$PROJECT_DIR$/.idea/modules/1.0 How Java Works/1.3/Lab7.1.0_How_Java_Works-1.3.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.1/Lab7.2.0_Method_Overriding-2.1.iml" filepath="$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.1/Lab7.2.0_Method_Overriding-2.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.1/Lab7.2.0_Method_Overriding-2.1.main.iml" filepath="$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.1/Lab7.2.0_Method_Overriding-2.1.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.1/Lab7.2.0_Method_Overriding-2.1.test.iml" filepath="$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.1/Lab7.2.0_Method_Overriding-2.1.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.2/Lab7.2.0_Method_Overriding-2.2.iml" filepath="$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.2/Lab7.2.0_Method_Overriding-2.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.2/Lab7.2.0_Method_Overriding-2.2.main.iml" filepath="$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.2/Lab7.2.0_Method_Overriding-2.2.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.2/Lab7.2.0_Method_Overriding-2.2.test.iml" filepath="$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.2/Lab7.2.0_Method_Overriding-2.2.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.3/Lab7.2.0_Method_Overriding-2.3.iml" filepath="$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.3/Lab7.2.0_Method_Overriding-2.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.3/Lab7.2.0_Method_Overriding-2.3.main.iml" filepath="$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.3/Lab7.2.0_Method_Overriding-2.3.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.3/Lab7.2.0_Method_Overriding-2.3.test.iml" filepath="$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.3/Lab7.2.0_Method_Overriding-2.3.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.4/Lab7.2.0_Method_Overriding-2.4.iml" filepath="$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.4/Lab7.2.0_Method_Overriding-2.4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.4/Lab7.2.0_Method_Overriding-2.4.main.iml" filepath="$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.4/Lab7.2.0_Method_Overriding-2.4.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.4/Lab7.2.0_Method_Overriding-2.4.test.iml" filepath="$PROJECT_DIR$/.idea/modules/2.0 Method Overriding/2.4/Lab7.2.0_Method_Overriding-2.4.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/3.0 Method Overloading/3.1/Lab7.3.0_Method_Overloading-3.1.iml" filepath="$PROJECT_DIR$/.idea/modules/3.0 Method Overloading/3.1/Lab7.3.0_Method_Overloading-3.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/3.0 Method Overloading/3.1/Lab7.3.0_Method_Overloading-3.1.main.iml" filepath="$PROJECT_DIR$/.idea/modules/3.0 Method Overloading/3.1/Lab7.3.0_Method_Overloading-3.1.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/3.0 Method Overloading/3.1/Lab7.3.0_Method_Overloading-3.1.test.iml" filepath="$PROJECT_DIR$/.idea/modules/3.0 Method Overloading/3.1/Lab7.3.0_Method_Overloading-3.1.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/3.0 Method Overloading/3.2/Lab7.3.0_Method_Overloading-3.2.iml" filepath="$PROJECT_DIR$/.idea/modules/3.0 Method Overloading/3.2/Lab7.3.0_Method_Overloading-3.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/3.0 Method Overloading/3.2/Lab7.3.0_Method_Overloading-3.2.main.iml" filepath="$PROJECT_DIR$/.idea/modules/3.0 Method Overloading/3.2/Lab7.3.0_Method_Overloading-3.2.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/3.0 Method Overloading/3.2/Lab7.3.0_Method_Overloading-3.2.test.iml" filepath="$PROJECT_DIR$/.idea/modules/3.0 Method Overloading/3.2/Lab7.3.0_Method_Overloading-3.2.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/3.0 Method Overloading/3.3/Lab7.3.0_Method_Overloading-3.3.iml" filepath="$PROJECT_DIR$/.idea/modules/3.0 Method Overloading/3.3/Lab7.3.0_Method_Overloading-3.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/3.0 Method Overloading/3.3/Lab7.3.0_Method_Overloading-3.3.main.iml" filepath="$PROJECT_DIR$/.idea/modules/3.0 Method Overloading/3.3/Lab7.3.0_Method_Overloading-3.3.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/3.0 Method Overloading/3.3/Lab7.3.0_Method_Overloading-3.3.test.iml" filepath="$PROJECT_DIR$/.idea/modules/3.0 Method Overloading/3.3/Lab7.3.0_Method_Overloading-3.3.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/4.0 Generics/4.1/Lab7.4.0_Generics-4.1.iml" filepath="$PROJECT_DIR$/.idea/modules/4.0 Generics/4.1/Lab7.4.0_Generics-4.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/4.0 Generics/4.1/Lab7.4.0_Generics-4.1.main.iml" filepath="$PROJECT_DIR$/.idea/modules/4.0 Generics/4.1/Lab7.4.0_Generics-4.1.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/4.0 Generics/4.1/Lab7.4.0_Generics-4.1.test.iml" filepath="$PROJECT_DIR$/.idea/modules/4.0 Generics/4.1/Lab7.4.0_Generics-4.1.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/4.0 Generics/4.2/Lab7.4.0_Generics-4.2.iml" filepath="$PROJECT_DIR$/.idea/modules/4.0 Generics/4.2/Lab7.4.0_Generics-4.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/4.0 Generics/4.2/Lab7.4.0_Generics-4.2.main.iml" filepath="$PROJECT_DIR$/.idea/modules/4.0 Generics/4.2/Lab7.4.0_Generics-4.2.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/4.0 Generics/4.2/Lab7.4.0_Generics-4.2.test.iml" filepath="$PROJECT_DIR$/.idea/modules/4.0 Generics/4.2/Lab7.4.0_Generics-4.2.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/5.0 Lab Problem/5.1/Lab7.5.0_Lab_Problem-5.1.iml" filepath="$PROJECT_DIR$/.idea/modules/5.0 Lab Problem/5.1/Lab7.5.0_Lab_Problem-5.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/5.0 Lab Problem/5.1/Lab7.5.0_Lab_Problem-5.1.main.iml" filepath="$PROJECT_DIR$/.idea/modules/5.0 Lab Problem/5.1/Lab7.5.0_Lab_Problem-5.1.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/5.0 Lab Problem/5.1/Lab7.5.0_Lab_Problem-5.1.test.iml" filepath="$PROJECT_DIR$/.idea/modules/5.0 Lab Problem/5.1/Lab7.5.0_Lab_Problem-5.1.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Lab7.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Lab7.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Lab7.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Lab7.util.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Lab7.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Lab7.util.test.iml" />
+    </modules>
+  </component>
+</project>

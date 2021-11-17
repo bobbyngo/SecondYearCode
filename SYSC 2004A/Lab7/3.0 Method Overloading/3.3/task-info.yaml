@@ -1,0 +1,169 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: In Car - <code>private boolean loadUp(int i)</code>
+  is_correct: true
+- text: In Car - <code>protected String loadUp()</code>
+  is_correct: true
+- text: In FordBronco - <code>public boolean loadUp(int i)</code>
+  is_correct: true
+- text: In FordBronco - <code>protected String loadUp(int i)</code>
+  is_correct: true
+- text: In FordBronco - <code>public boolean loadUp(String s, int i)</code>
+  is_correct: true
+- text: In FordBronco - <code>public void loadUp(Object o)</code>
+  is_correct: true
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Car.java
+  visible: true
+  text: |
+    public class Car {
+
+        private String cargo = "";
+
+        public void goes() {
+            System.out.println("Vroom");
+        }
+
+        /**
+         * A Car can take 1 item as cargo.
+         */
+        public boolean loadUp(String cargo) {
+            if (this.cargo.equals("")) {
+                this.cargo = cargo;
+                return true;
+            }
+            return false;
+        }
+
+        public String getCargo() {
+            return cargo;
+        }
+    }
+  learner_created: false
+- name: src/FordBronco.java
+  visible: true
+  text: |
+    public class FordBronco extends Car {
+
+        private KiaRio tow = null;
+
+        @Override
+        public void goes() {
+            System.out.println("VROOM");
+        }
+
+        /**
+         * A FordBronco can tow a KiaRio.
+         */
+        public boolean loadUp(KiaRio k) {
+            if (tow == null) {
+                tow = k;
+                return true;
+            }
+            return false;
+        }
+
+        /**
+         * A FordBronco can take cargo and tow a KiaRio.
+         */
+        public boolean loadUp(String cargo, KiaRio k) {
+            return super.loadUp(cargo) && loadUp(k);
+        }
+
+        @Override
+        public String getCargo() {
+            return super.getCargo() + "|" + ((tow == null) ? "" : "KiaRio");
+        }
+    }
+  learner_created: false
+- name: src/KiaRio.java
+  visible: true
+  text: |
+    public class KiaRio extends Car {
+        @Override
+        public void goes() {
+            System.out.println("Clunk");
+        }
+
+        /**
+         * You really shouldn't.
+         */
+        public boolean loadUp(String cargo) {
+            return false;
+        }
+
+        @Override
+        public String getCargo() {
+            return "You really shouldn't.";
+        }
+    }
+  learner_created: false
+- name: src/Main.java
+  visible: true
+  text: |-
+    public class Main {
+       public static void main(String[] args) {
+
+          FordBronco bronco = new FordBronco();
+          KiaRio rio = new KiaRio();
+          TeslaS s = new TeslaS();
+
+          // write your solution here
+
+          System.out.println(bronco.getCargo());
+          System.out.println(rio.getCargo());
+          System.out.println(s.getCargo());
+       }
+    }
+  learner_created: false
+- name: src/TeslaS.java
+  visible: true
+  text: |
+    public class TeslaS extends Car {
+
+        private String lawyersNumber = "";
+
+        @Override
+        public void goes() {
+            System.out.println("");
+        }
+
+        /**
+         * A TeslaS can take extra cargo in the form of a String.
+         */
+        public boolean loadUp(String lawyersNumber) {
+            if (this.lawyersNumber.equals("")) {
+                this.lawyersNumber = lawyersNumber;
+                return true;
+            }
+            return false;
+        }
+
+        /**
+         * A TeslaS can take extra cargo in the form of a String and cargo.
+         */
+        public boolean loadUp(String cargo, String lawyersNumber) {
+            return super.loadUp(cargo) && loadUp(lawyersNumber);
+        }
+
+        @Override
+        public String getCargo() {
+            return super.getCargo() + "|" + lawyersNumber;
+        }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 10 Mar 2021 22:42:51 UTC
+record: -1
+selected_options:
+- 0
+- 1
+- 2
+- 3
+- 5
+- 4

@@ -1,0 +1,126 @@
+type: theory
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    import java.util.ArrayList;
+    import java.util.Arrays;
+    import java.util.List;
+
+    public class Main {
+       public static void main(String[] args) {
+          // example
+          List<Car> cars = new ArrayList<>(
+                  Arrays.asList(
+                          new FordBronco("sport", 50000, 8),
+                          new FordBronco("turbo", 58000, 10),
+                          new FordBronco("turbo-sport", 55000, 9.2),
+                          new TeslaS("sedan", 65000, 0),
+                          new TeslaS("sedan", 68000, 0),
+                          new TeslaS("sport", 75000, 0),
+                          new TeslaS("sport", 70000, 0),
+                          new KiaRio("hatchback", 18000, 5.1),
+                          new KiaRio("hatchback", 15000, 5.8),
+                          new KiaRio("sedan", 18000, 5.1),
+                          new KiaRio("sedan", 19000, 5.3),
+                          new KiaRio("turbo", 25000, 15.1)
+                  )
+          );
+
+          AutoAutoSalesman aas = new AutoAutoSalesman(cars);
+       }
+    }
+  learner_created: false
+- name: src/Car.java
+  visible: true
+  text: |
+    public class Car {
+
+        private final String style;
+        private final double price;
+        private final double fuelEconomy;
+
+        public Car(String style, double price, double fuelEconomy) {
+            this.style = style;
+            this.price = price;
+            this.fuelEconomy = fuelEconomy;
+        }
+
+        public String getStyle() {
+            return style;
+        }
+
+        public double getPrice() {
+            return price;
+        }
+
+        public double getFuelEconomy() {
+            return fuelEconomy;
+        }
+
+        public void goes() {
+            System.out.println("Vroom");
+        }
+
+        @Override
+        public String toString() {
+            return this.getClass().toString() +
+                    " " + getStyle() +
+                    " " + getPrice() +
+                    " " + getFuelEconomy();
+        }
+    }
+  learner_created: false
+- name: src/FordBronco.java
+  visible: true
+  text: |
+    public class FordBronco extends Car {
+
+        public FordBronco(String style, double price, double fuelEconomy) {
+            super(style, price, fuelEconomy);
+        }
+
+        @Override
+        public void goes() {
+            System.out.println("VROOM");
+        }
+    }
+  learner_created: false
+- name: src/KiaRio.java
+  visible: true
+  text: |
+    public class KiaRio extends Car {
+
+        public KiaRio(String style, double price, double fuelEconomy) {
+            super(style, price, fuelEconomy);
+        }
+
+        @Override
+        public void goes() {
+            System.out.println("Clunk");
+        }
+    }
+  learner_created: false
+- name: src/TeslaS.java
+  visible: true
+  text: |
+    public class TeslaS extends Car {
+
+        public TeslaS(String style, double price, double fuelEconomy) {
+            super(style, price, fuelEconomy);
+        }
+
+        @Override
+        public void goes() {
+            System.out.println("");
+        }
+    }
+  learner_created: false
+- name: src/AutoAutoSalesman.java
+  visible: true
+  learner_created: true
+status: Solved
+feedback:
+  time: Tue, 16 Mar 2021 02:46:03 UTC
+record: -1
+post_submission_on_open: true

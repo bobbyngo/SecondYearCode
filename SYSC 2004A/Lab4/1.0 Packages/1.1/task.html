@@ -1,0 +1,78 @@
+<html>
+<head>
+    <style type ="text/css">
+       .footer{
+           position: fixed;
+           text-align: left;
+           line-height: 1.5;
+           bottom: 0px;
+           left: 5px;
+           width: 100%;
+       }
+        </style>
+    <style type ="text/css">
+       .body {
+           padding-bottom: 50px;
+       }
+    </style>
+</head>
+<body>
+<div class="body">
+    <h1>Lab 4 - JCL, Packages, Javadoc</h1>
+    <p>Authors: <strong>Martin Klamrowski</strong>, <strong>Cristina Ruiz Martin</strong></p>
+    <!--<p>Relevant textbook reading - <strong>Chapters 6, 7</strong> (Think Java)</p>-->
+    <h3>~1.0 Packages~</h3>
+    <p>
+        Packages are a way to group related classes together. A number of "built-in" packages have already been used
+        such as ArrayList from the util package (java.util.ArrayList), or String (java.lang.String). These are some of
+        the packages that make up the JCL (Java Classes Library), which will be discussed in the next section.
+        You can think of packages as directories on your computer, that can hold files and other subdirectories.
+    </p>
+    <p>
+        Packages are useful for a number of reasons. Defining a package can prevent class name collisions in large
+        applications; you may want to define your own ArrayList class for example, or import one from a third-party.
+        Packages are also useful tools for enforcing the OO principle of encapsulation. We can hide details about our
+        classes so that they can only be accessed from within the scope of their package.
+    </p>
+    <p>
+        This section looks at how packages can be used to elevate the quality of Java applications.
+    </p>
+    <h3>~Task 1.1~</h3>
+    <p>
+        As already mentioned, packages can be conceptualized as a hierarchy of folders and sub-folders. Each folder
+        contains a set of closely related classes and interfaces. Take ArrayList for example, it belongs to the
+        util package, which in turn belongs to the java package.
+    </p>
+    <p>
+        To specify the package to which a class belongs, we include the following statements at the top (header) of the
+        file:<br>
+        <code>package packagename;</code>. There are naming conventions for packages, which can be found here:
+        <a href="https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html#367">Oracle Docs: Naming Conventions</a>.
+        Take a look at them, but do not worry too much about them because this lab is not focused on naming conventions.
+    </p>
+    <p>
+        To use a package and/or the classes it contains, we must import it. Packages/classes required by the current
+        class must be imported in the header of the file where they are used. There are <strong>three</strong>
+        exceptions to this, i.e. the Java compiler <strong>always</strong> imports the following automatically:
+    </p>
+    <ul>
+        <li>The package of the current class.</li>
+        <li>The lang package (contains String, Object, ...).</li>
+        <li>
+            The default package (any class that was not specified as belonging to a particular package) - also called
+            the "package with no name".
+        </li>
+    </ul>
+    <p>
+        Make the required import in <code>one.one.Main.java</code> to fix the error.
+    </p>
+</div>
+
+</body>
+<!--<div class="footer">-->
+<!--    <p>-->
+<!--        <strong>Run it.</strong>-->
+<!--    </p>-->
+<!--</div>-->
+
+</html>

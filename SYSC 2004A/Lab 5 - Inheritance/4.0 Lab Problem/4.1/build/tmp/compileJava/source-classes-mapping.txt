@@ -1,0 +1,10 @@
+Virus.java
+ Virus
+Person.java
+ Person
+InfectedPerson.java
+ InfectedPerson
+Main.java
+ Main
+Corona.java
+ Corona

@@ -1,0 +1,143 @@
+<html>
+<head>
+    <style type ="text/css">
+       .footer{
+           position: fixed;
+           text-align: left;
+           bottom: 0px;
+           left: 5px;
+           width: 100%;
+       }
+    </style>
+    <style type ="text/css">
+       .body {
+           padding-bottom: 50px;
+       }
+    </style>
+    <style>
+       .preamble {
+            border: 5px rgb(255, 0, 0) dashed;
+            padding: 5px;
+            display: block;
+       }
+    </style>
+</head>
+<body>
+<div class="body">
+    <h1>Lab 9 - Introduction to Swing GUIs</h1>
+    <p>Authors: <strong>Martin Klamrowski</strong>, <strong>Cristina Ruiz Martin</strong></p>
+<!--    <p>Relevant textbook reading - <strong>Chapter 1, 7</strong> (The Object Oriented Thought Process)</p>-->
+    <h3>~4.0 Lab Problem~</h3>
+    <div class="preamble">
+        <p>
+            You must submit your solution to this problem on CuLearn.
+            <strong>
+                YOU MUST INCLUDE YOUR FULL NAME AND STUDENT NUMBER IN COMMENTS AT THE
+                HEAD OF EVERY FILE YOU SUBMIT
+            </strong>.
+        </p>
+        <p>
+            Submit <strong><u><i>ONLY</i></u></strong> the files specified at the end of this big red box. The files
+            and code within should be completed according to the specifications made <i>throughout</i> the Lab, and only
+            the final versions should be submitted. I.e., if Task 55.23 tells you to add accessor methods to MyClass,
+            you are required to include that code if MyClass needs to be submitted as part of the solution to the
+            Lab Problem (<strong>unless</strong> a later Task or the Lab Problem state otherwise).
+        </p>
+        <p>
+            Do not include redundant methods. Do not include methods that are not asked for or necessary. Some Lab
+            Problems will not explicitly state you need accessor methods, but these methods may be necessary.
+        </p>
+        <p>
+            Now that you have learned how to document code, you need to document your classes for full marks!
+            <strong>This is applicable from Lab 4 until the end of the course.</strong>
+        </p>
+        <p>
+            If you choose to complete the problem in this environment, the files can be
+            retrieved by right-clicking '4.0 Lab Problem'>Show in Files/Explorer.
+        </p>
+        <p>
+            Submit <strong>PaletteGenerator.java</strong> when you are done.
+        </p>
+    </div>
+    <h3>~Problem 4.1~</h3>
+    <p>
+        For this problem, you must build on the code we have already completed. It is provided for you in
+        <code>Main.java</code>. YOU MUST gradually move it over into our new class PaletteGenerator. When you
+        are done, there should be nothing in <code>Main.java</code> except for the <code>main()</code> method
+        containing the following code:
+    </p>
+    <pre>
+PaletteGenerator pg = new PaletteGenerator();
+pg.displayGUI();
+    </pre>
+    <p>
+        You will be creating an application that will generate a random set of colours using the
+        <code>getColour()</code> method provided.
+    </p>
+    <p>
+        <strong>Your task:</strong>
+    </p>
+    <ul>
+        <li>
+            The general layout of the application is already provided. Feel free to move the creation of the various
+            components into their own separate <i>private</i> methods. In fact, it is strongly recommended you do.
+        </li>
+        <li>
+            The PaletteGenerator will have three sections:
+            <ol>
+                <li>
+                    Header: Contains only a label with a title.
+                </li>
+                <li>
+                    Body: Contains <strong><u>8</u></strong> JPanels with associated lock JButtons that will represent
+                    our generated colour palette. Each colour JPanel will have an associated lock button, that when
+                    clicked will lock that colour panel so that if the generate button is clicked again, it will not
+                    change. A lock button can be unclicked, so if generate is clicked the colour panel will once again
+                    change.
+                </li>
+                <li>
+                    Footer: A single JButton that we can click to generate a new palette.
+                </li>
+            </ol>
+            It must look like this (in structure, exact text is not necessary):
+            <img src="src/example-palette.png">
+        </li>
+    </ul>
+    <p>
+        <strong>Guidelines:</strong>
+    </p>
+    <ul>
+        <li>
+            You cannot:
+            <ul>
+                <li>Extend JFrame.</li>
+                <li>Change the general layout.</li>
+                <li>Add more components than asked for.</li>
+                <li>Have any more public methods than <code>displayGUI()</code></li>
+                <li>Have more or less than 8 colour panels.</li>
+                <li>
+                    Set the size of your frame; it must be resizeable, and the colour panels must dynamically resize to
+                    fill the window.
+                </li>
+                <li>
+                    Remove the WindowListener provided. A prompt must be displayed before quitting.
+                </li>
+                <li>Have ANY static members in PaletteGenerator.</li>
+            </ul>
+        </li>
+        <li>
+            You can:
+            <ul>
+                <li>Use different layouts (though it is not recommended).</li>
+                <li>Nest several JPanels (within reason) with their own layout managers.</li>
+                <li>Keep as many private fields (within reason, you do not need many) you want.</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+<!--<div class="footer">-->
+<!--    &lt;!&ndash;<strong>You can run your code here.</strong>&ndash;&gt;-->
+<!--</div>-->
+
+</html>

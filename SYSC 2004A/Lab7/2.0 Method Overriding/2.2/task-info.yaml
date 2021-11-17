@@ -1,0 +1,30 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: The correct method call is determined before run-time (by the compiler).
+  is_correct: false
+- text: Method overriding increases the run-time of the program.
+  is_correct: false
+- text: The correct method call is determined after run-time (by the programmer).
+  is_correct: false
+- text: The correct method call is determined at run-time (by the JVM).
+  is_correct: true
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public class Main {
+       public static void main(String[] args) {
+          // Write your solution here
+       }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 10 Mar 2021 18:06:47 UTC
+record: -1
+selected_options:
+- 3

@@ -1,0 +1,71 @@
+<html>
+<head>
+    <style type ="text/css">
+       .footer{
+           position: fixed;
+           text-align: left;
+           line-height: 1.5;
+           bottom: 0px;
+           left: 5px;
+           width: 100%;
+       }
+        </style>
+    <style type ="text/css">
+       .body {
+           padding-bottom: 50px;
+       }
+    </style>
+</head>
+<body>
+<div class="body">
+    <h1>Lab 4 - JCL, Packages, Javadoc</h1>
+    <p>Authors: <strong>Martin Klamrowski</strong>, <strong>Cristina Ruiz Martin</strong></p>
+    <!--<p>Relevant textbook reading - <strong>Chapters 6, 7</strong> (Think Java)</p>-->
+    <h3>~2.0 JCL~</h3>
+    <p>
+        The Java Class Library contains a plethora of built-in classes and interfaces. We have already seen a number of
+        these, such as String, Iterator, ArrayList, arrays, etc.
+    </p>
+    <p>
+        This section will serve as an introduction to some popular packages from the JCL.
+    </p>
+    <h3>~Task 2.3~</h3>
+    <p>
+        java.lang.StringBuilder is useful when we need to perform a large number of String operations (e.g. many
+        subsequent concatenations). Concatenating String objects together is computationally expensive, as under the hood
+        a new String is being created for every concatenation.
+    </p>
+    <p>
+        Write code in <code>one.one.Main.java</code> to do the following:
+    </p>
+    <ol>
+        <li>
+            Continuously take input from console. The loop should quit when the user types in "quit".
+        </li>
+        <li>
+            While taking input, each line should be appended to a StringBuilder object (as a new line).
+        </li>
+        <li>
+            When the user enters quit, print out the StringBuilder (not including "quit").
+        </li>
+    </ol>
+    <div class="hint">
+        Stuck? Consult the docs! ->
+        <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html">Oracle Docs: StringBuilder</a>
+    </div>
+    <p>
+        <i>
+            Note: to be able to type in the terminal you need to run one.one.Main.main() by clicking the small green arrow to
+            the left of the main method signature.
+        </i>
+    </p>
+</div>
+
+</body>
+<div class="footer">
+    <p>
+        <!--<strong>Try it!</strong>-->
+    </p>
+</div>
+
+</html>

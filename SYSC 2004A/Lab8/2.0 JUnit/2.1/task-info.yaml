@@ -1,0 +1,60 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: Fail
+  is_correct: false
+- text: Pass
+  is_correct: true
+- text: Neither
+  is_correct: false
+- text: In Between
+  is_correct: false
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public class Main {
+       public static void main(String[] args) {
+          // Write your solution here
+       }
+    }
+  learner_created: false
+- name: src/test/MyTests.java
+  visible: true
+  text: |
+    package test;
+
+    import org.junit.*;
+
+    public class MyTests {
+        @Before
+        public void init() {
+            // test fixture; executed before each test
+            // creation of required objects, program state, etc.
+        }
+
+        @Test
+        public void testThis() {
+            // a test
+        }
+
+        @Test
+        public void testThat() {
+            // another test
+        }
+
+        @After
+        public void tearDown() {
+            // executed after each test
+        }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 16 Mar 2021 15:25:01 UTC
+record: -1
+selected_options:
+- 1

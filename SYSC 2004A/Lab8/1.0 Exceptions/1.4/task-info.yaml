@@ -1,0 +1,38 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: You cannot write try-catch blocks inside methods.
+  is_correct: false
+- text: Using <code>throws</code> makes your code look more professional.
+  is_correct: false
+- text: The alternative is handling the exception within the method. If you have many
+    methods that throw these exceptions, you would have to write a try-catch block
+    in each method.
+  is_correct: true
+- text: Using <code>throws</code>, all exceptions are automatically caught in the
+    method and ignored, resulting in exception-free code!
+  is_correct: false
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public class Main {
+
+       public static void thrower() throws Exception {
+          throw new Exception("Oh no!");
+       }
+
+       public static void main(String[] args) {
+          thrower();
+       }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 16 Mar 2021 03:14:08 UTC
+record: -1
+selected_options:
+- 2

@@ -1,0 +1,35 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Interfaces cannot be instantiated, abstract classes can.
+  is_correct: false
+- text: Interfaces can be instantiated, abstract classes cannot.
+  is_correct: false
+- text: Interfaces can contain behaviour, abstract classes cannot.
+  is_correct: false
+- text: A derived class can implement multiple interfaces, but can only extend one
+    abstract class at a time.
+  is_correct: true
+- text: Interfaces are behaviour-free (can contain only abstract methods), while abstract
+    classes can contain both concrete and abstract methods.
+  is_correct: true
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public class Main {
+       public static void main(String[] args) {
+          // nothing
+       }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 06 Apr 2021 02:50:04 UTC
+record: -1
+selected_options:
+- 3
+- 4

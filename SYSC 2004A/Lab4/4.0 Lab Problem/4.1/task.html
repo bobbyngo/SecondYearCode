@@ -1,0 +1,136 @@
+<html>
+<head>
+    <style type ="text/css">
+        .footer {
+            position: fixed;
+            text-align: left;
+            bottom: 0px;
+            left: 5px;
+            width: 100%;
+        }
+    </style>
+    <style type ="text/css">
+       .body {
+            padding-bottom: 50px;
+       }
+    </style>
+    <style>
+       .preamble {
+            border: 5px rgb(255, 0, 0) dashed;
+            padding: 5px;
+            display: block;
+       }
+    </style>
+</head>
+<body>
+<div class="body">
+    <h1>Lab 4 - JCL, Packages, Javadoc</h1>
+    <p>Authors: <strong>Martin Klamrowski</strong>, <strong>Cristina Ruiz Martin</strong></p>
+    <!--<p>Relevant textbook reading - <strong>Chapters 6, 7</strong> (Think Java)</p>-->
+    <h3>~4.0 Lab Problem~</h3>
+    <div class="preamble">
+        <p>
+            You must submit your solution to this problem on CuLearn.
+            <strong>
+                YOU MUST INCLUDE YOUR FULL NAME AND STUDENT NUMBER IN COMMENTS AT THE
+                HEAD OF EVERY FILE YOU SUBMIT
+            </strong>.
+        </p>
+        <p>
+            Submit <strong><u><i>ONLY</i></u></strong> the files specified at the end of this big red box. The files
+            and code within should be completed according to the specifications made <i>throughout</i> the Lab, and only
+            the final versions should be submitted. I.e., if Task 55.23 tells you to add accessor methods to MyClass,
+            you are required to include that code if MyClass needs to be submitted as part of the solution to the
+            Lab Problem (<strong>unless</strong> a later Task or the Lab Problem state otherwise).
+        </p>
+        <p>
+            Do not include redundant methods. Do not include methods that are not asked for or necessary. Some Lab
+            Problems will not explicitly state you need accessor methods, but these methods may be necessary.
+        </p>
+        <p>
+            Now that you have learned how to document code, you need to document your classes for full marks!
+            <strong>This is applicable from Lab 4 until the end of the course.</strong>
+        </p>
+        <p>
+            If you choose to complete the problem in this environment, the files can be
+            retrieved by right-clicking '4.0 Lab Problem'>Show in Files/Explorer.
+        </p>
+        <p>
+            Submit a .zip file containing your <strong>mymath</strong> package when you are done.
+        </p>
+    </div>
+
+    <h3>~Problem 4.1~</h3>
+
+    <p>
+        For this problem you will be making your own package called mymath. This package will have two classes:
+        <strong>mymath.Poly</strong> and <strong>mymath.PolyCalc</strong>. Both classes require <strong>complete</strong>
+        Javadoc document comments. Also make sure you create the package and add both classes to it.
+    </p>
+    <p>
+        <strong>mymath.Poly</strong>:
+    </p>
+    <ul>
+        <li>
+            <p>
+                This class will model a polynomial of the form:
+                Ax<sup>n-1</sup> + Bx<sup>n-2</sup> ... Ux<sup>3</sup> + Wx<sup>2</sup> + Yx + Z. It has one constructor
+                that takes an array of double coefficients of size n (n > 0). I.e., you can assume that only non-empty
+                arrays will be passed to the constructor.
+            </p>
+            <p>
+                For example, to make the polynomial
+                4x<sup>2</sup> + 3x - 2, it should be made this way <code>new mymath.Poly(new double[]{4, 3, -2})</code>.
+                The same polynomial could also be made this way <code>new mymath.Poly(new double[]{0, 0, 0, 4, 3, -2})</code>.
+                You are free to store these parameters however you choose.
+            </p>
+        </li>
+        <li>
+            mymath.Poly has a method called <code>evaluate()</code>. This method will return the double value of the polynomial
+            evaluated for a given x (you can tap into
+            <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Math.html">java.lang.Math</a>
+            for some handy maths operators).
+        </li>
+        <li>
+            mymath.Poly has a method called <code>printPoly()</code>. This method should print the polynomial out in the form mentioned
+            above: ax<sup>3</sup> + bx<sup>2</sup> + cx + d. However, terms with 0 coefficients should be
+            omitted. For example, the polynomial 5.5x<sup>3</sup> - 3.1x + 3 should be printed as:<br>
+            <code>"5.5x^3 - 3.1x^1 + 3.0"</code>. If the mymath.Poly has all 0 coefficients, print an empty String.
+        </li>
+        <li>
+            You can define accessor methods for mymath.Poly and keep track of any other attributes you like.
+        </li>
+    </ul>
+    <p>
+        <strong>mymath.PolyCalc</strong>:
+    </p>
+    <ul>
+        <li>
+            This class will contain some calculus we can perform on a mymath.Poly object. You do not need to define a
+            constructor. This class will behave as a utility class in the sense that we do not need to create an
+            instance of the class to access its members. java.lang.Math is another example of this kind of class. To
+            make this possible, we simply need to define a member as <code>static</code>.
+        </li>
+        <li>
+            mymath.PolyCalc has a <strong>static</strong> method called <code>differentiate()</code> . This method should
+            calculate the coefficients for the derivative of the supplied mymath.Poly object. It should then create a new mymath.Poly
+            object from those coefficients and return it. The "new coefficients" array should ALWAYS be the same length
+            as the original array. Also, you do not need to round coefficients.
+        </li>
+        <li>
+            mymath.PolyCalc has a <strong>static</strong> method called <code>integrate()</code> . This method should calculate the
+            coefficients for the integral of the supplied mymath.Poly object. It should then create a new mymath.Poly object
+            from those coefficients and return it. Assume the integration constant C is always 0.
+            The "new coefficients" array should ALWAYS be the same length + 1 as the
+            original array (integrals go up an order). It does not matter if the original array is [0, 0, 0, 1], the
+            new array should then be [0, 0, 0, 1, 0]. Also, you do not need to round coefficients.
+        </li>
+    </ul>
+
+</div>
+</body>
+<div class="footer">
+    <!--<strong>You can run your code here.</strong>-->
+</div>
+
+</html>

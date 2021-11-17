@@ -1,0 +1,79 @@
+<html>
+<head>
+    <style type ="text/css">
+       .footer{
+           position: fixed;
+           text-align: left;
+           line-height: 1.5;
+           bottom: 0px;
+           left: 5px;
+           width: 100%;
+       }
+        </style>
+    <style type ="text/css">
+       .body {
+           padding-bottom: 200px;
+       }
+    </style>
+</head>
+<body>
+<div class="body">
+    <h1>Lab 8 - Exceptions, Unit Tests</h1>
+    <p>Authors: <strong>Martin Klamrowski</strong>, <strong>Cristina Ruiz Martin</strong></p>
+    <p>
+        Relevant textbook reading - <strong>Chapter 3</strong> (The Object Oriented Thought Process),
+        <strong>Appendix D</strong> (Think Java 2e).
+    </p>
+    <h3>~2.0 JUnit~</h3>
+    <p>
+        JUnit is a widely used unit testing framework for Java. Using JUnit is a good first step in
+        testing your software. This section will provide an introduction to creating JUnit test classes in Java.
+    </p>
+    <h3>~Task 2.1~</h3>
+    <p>
+        JUnit tests can be used to test methods in a class. An example JUnit test class can be found in
+        <code>MyTests.java</code>. You can find details here:
+        <a href="https://junit.org/junit5/docs/current/user-guide/#writing-tests">JUnit Docs</a>. Everything you would
+        ever need to know about JUnit can be found in the JUnit Docs. Note: there are some differences between JUnit 4
+        and JUnit 5, but for our purposes it is mostly the same (the <code>@Before</code> annotation differs from the
+        JUnit 5 annotations).
+    </p>
+    <p>
+        Tests should be located in a separate package, usually called <code>test</code>.
+        The general format you should follow for JUnit test classes in this course is shown in
+        <code>MyTests.java</code>:
+    </p>
+    <ul>
+        <li>
+            If you are testing non-static methods, you will likely need to instantiate some objects. This setup is
+            called the test fixture, and can be done using the <code>@Before</code> annotation.
+        </li>
+        <li>
+            <code>@Test</code> denotes a particular test. Each "@Test" should test a specific case or function. For
+            example, if you want to test that a <code>removeDuplicates()</code> method does what it is supposed to,
+            you would create a test called <code>testRemoveDuplicates()</code> to test all your test cases. You might
+            even be more specific, creating a test method for special cases like
+            <code>testRemoveDuplicatesAllElementsIdentical()</code>.
+        </li>
+        <li>
+            The success or failure of a test is done using assert statements. There are many types of assert statements
+            such as <code>assertEquals()</code>, <code>assertThrows()</code>, etc. They can all be found here:
+            <a href="https://junit.org/junit5/docs/current/user-guide/#writing-tests">JUnit Docs</a>.
+        </li>
+        <li>
+            Finally, if you want to perform some clean up after each test you can use <code>@After</code>.
+        </li>
+    </ul>
+    <p>
+        Answer the MC question below.
+    </p>
+</div>
+
+</body>
+<div class="footer">
+    <p>
+        <strong>Question:</strong> What will <code>assertTrue("hello" == "hello")</code> evaluate to?
+    </p>
+</div>
+
+</html>

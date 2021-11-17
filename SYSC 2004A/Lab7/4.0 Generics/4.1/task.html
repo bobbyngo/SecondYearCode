@@ -1,0 +1,59 @@
+<html>
+<head>
+    <style type ="text/css">
+       .footer{
+           position: fixed;
+           text-align: left;
+           line-height: 1.5;
+           bottom: 0px;
+           left: 5px;
+           width: 100%;
+       }
+        </style>
+    <style type ="text/css">
+       .body {
+           padding-bottom: 200px;
+       }
+    </style>
+</head>
+<body>
+<div class="body">
+    <h1>Lab 7 - Polymorphism</h1>
+    <p>Authors: <strong>Martin Klamrowski</strong>, <strong>Cristina Ruiz Martin</strong></p>
+    <p>Relevant textbook reading - <strong>Chapter 1, 7</strong> (The Object Oriented Thought Process)</p>
+    <h3>~4.0 Generics~</h3>
+    <p>
+        This section will cover the basics of parameterization, parameterized types, generic types and generics in Java.
+    </p>
+    <h3>~Task 4.1~</h3>
+    <p>
+        Up until now, we have often seen a collection, such as an <code>ArrayList</code>, parameterized with some data
+        type upon instantiation, as so: <code>ArrayList&lt;String&gt;</code>. The type parameters are specified using angle
+        brackets (<code><></code>), otherwise known as the diamond operator. So what is going on here?
+    </p>
+    <p>
+        If you take a peek at the Java code for ArrayList, LinkedList, you will see they
+        are declared with some "type" E. E is a placeholder for a type parameter! With
+        <code>public class ArrayList&lt;E&gt; ...</code>, we are saying that the class is generic, and is not expecting
+        a specific type; the type is variable! We must then specify the type when we instantiate a new ArrayList:
+        <code>new ArrayList&lt;String&gt;();</code>.
+    </p>
+    <p>
+        Consider the code in <code>Main.java</code>. Despite what you might think, this code would compile properly!
+        This is because the compiler does not know if the type-cast to a <code>FordBronco</code> (line 10) is
+        permissible or not, because we have not told it what element type to expect in the List (line 8). Parameterized
+        types allow us to keep our generic classes, and also tell the compiler what type to expect so the correct casts
+        can be made under the hood, and we don't get unexpected runtime errors. Otherwise known as
+        <i>compile-time type safety</i>. Run <code>Main.java</code> as it is now and see what happens.
+    </p>
+</div>
+
+</body>
+<div class="footer">
+    <p>
+        <strong>Question:</strong> Given the code in <code>Main.java</code>, what could you change to detect the
+        problem with the code? I.e., how can we help the compiler find the problem with the code?
+    </p>
+</div>
+
+</html>

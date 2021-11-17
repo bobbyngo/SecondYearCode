@@ -1,0 +1,160 @@
+<html>
+<head>
+    <style type ="text/css">
+        .footer {
+            position: fixed;
+            text-align: left;
+            bottom: 0px;
+            left: 5px;
+            width: 100%;
+        }
+    </style>
+    <style type ="text/css">
+       .body {
+            padding-bottom: 50px;
+       }
+    </style>
+    <style>
+       .preamble {
+            border: 5px rgb(255, 0, 0) dashed;
+            padding: 5px;
+            display: block;
+       }
+    </style>
+</head>
+<body>
+<div class="body">
+    <h1>Lab 5 - Inheritance</h1>
+    <p>Authors: <strong>Martin Klamrowski</strong>, <strong>Cristina Ruiz Martin</strong></p>
+    <p>Relevant textbook reading - <strong>Chapter 7</strong> (The Object Oriented Thought Process)</p>
+    <h3>~4.0 Lab Problem~</h3>
+    <div class="preamble">
+        <p>
+            You must submit your solution to this problem on CuLearn.
+            <strong>
+                YOU MUST INCLUDE YOUR FULL NAME AND STUDENT NUMBER IN COMMENTS AT THE
+                HEAD OF EVERY FILE YOU SUBMIT
+            </strong>.
+        </p>
+        <p>
+            Submit <strong><u><i>ONLY</i></u></strong> the files specified at the end of this big red box. The files
+            and code within should be completed according to the specifications made <i>throughout</i> the Lab, and only
+            the final versions should be submitted. I.e., if Task 55.23 tells you to add accessor methods to MyClass,
+            you are required to include that code if MyClass needs to be submitted as part of the solution to the
+            Lab Problem (<strong>unless</strong> a later Task or the Lab Problem state otherwise).
+        </p>
+        <p>
+            Do not include redundant methods. Do not include methods that are not asked for or necessary. Some Lab
+            Problems will not explicitly state you need accessor methods, but these methods may be necessary.
+        </p>
+        <p>
+            Now that you have learned how to document code, you need to document your classes for full marks!
+            <strong>This is applicable from Lab 4 until the end of the course.</strong>
+        </p>
+        <p>
+            If you choose to complete the problem in this environment, the files can be
+            retrieved by right-clicking '4.0 Lab Problem'>Show in Files/Explorer.
+        </p>
+        <p>
+            Submit <strong>Person.java</strong>, <strong>InfectedPerson.java</strong>, <strong>Corona.java</strong>
+            when you are done.
+        </p>
+    </div>
+    <h3>~Problem 4.1~</h3>
+    <p>
+        You will apply the concepts you have learned in this lab. Your task will be to develop two
+        new classes (<strong>Person</strong> and <strong>InfectedPerson</strong>), which will interact with the Corona
+        class you completed from before.
+    </p>
+    <p>
+        <i>Notes:</i>
+    </p>
+    <ul>
+        <li>
+            <i>You are not allowed to modify</i> <code>Virus.java</code><i>.</i>
+        </li>
+        <li>
+            <i>You will need your completed solution for the Corona class from 2.3.</i>
+        </li>
+        <li>
+            <i>Where you are unsure, use your judgment or make an assumption.</i>
+        </li>
+        <li>
+            <i>All your classes require complete Javadoc document comments.</i>
+        </li>
+    </ul>
+    <p>
+        <strong>Person</strong>:
+    </p>
+    <ul>
+        <li>
+            Person should have fields for: <code>name</code>, <code>age</code> (Integer).
+        </li>
+        <li>
+            There should be accessor and setter methods for all the above fields.
+        </li>
+        <li>
+            Person has two constructors:
+            <ol>
+                <li>
+                    A default constructor which initializes the respective fields to <code>""</code>, <code>0</code>.
+                </li>
+                <li>
+                    An overloaded constructor which takes both fields as parameters and initializes accordingly.
+                </li>
+            </ol>
+        </li>
+    </ul>
+    <p>
+        <strong>InfectedPerson</strong>:
+    </p>
+    <ul>
+        <li>
+            InfectedPerson is a subclass of Person.
+        </li>
+        <li>
+            InfectedPerson should have fields for: <code>underlyingConditions</code>, <code>symptoms</code> (both
+            ArrayLists), and <code>diagnosis</code> (of type Corona).
+        </li>
+        <li>
+            InfectedPerson should have two constructors:
+            <ol>
+                <li>
+                    A constructor that takes as parameters all the fields specific to InfectedPerson except
+                    <code>diagnosis</code>. <code>diagnosis</code> should always be initialized to <code>null</code>.
+                </li>
+                <li>
+                    A second constructor that takes as parameters all the fields specific to InfectedPerson (except
+                    <code>diagnosis</code>),
+                    <strong>+</strong> <code>name</code> and <code>age</code>.
+                </li>
+            </ol>
+            <i>Remember your calls to</i> <code>super()</code><i>, there should never be an uninitialized field!</i>
+        </li>
+        <li>
+            InfectedPerson needs accessor methods for all its fields.
+        </li>
+        <li>
+            InfectedPerson needs mutator methods for <code>underlyingConditions</code>, <code>symptoms</code>. These
+            methods should take String parameters and add the supplied values to the respective ArrayList.
+            <br><i>You MUST check for duplicates before adding!</i>
+        </li>
+        <li>
+            <p>
+                InfectedPerson has a method called <code>isSymptomatic()</code>. This method takes a Corona object as a
+                parameter. An InfectedPerson is said to be symptomatic if they have <strong>at least</strong> 75% of the
+                symptoms from the Corona object's <code>symptoms</code> field.
+                If the InfectedPerson does have at least 75% of the symptoms the <code>diagnosis</code> is set to
+                the Corona object, and a boolean <code>true</code> is returned. Otherwise, just return
+                <code>false</code>.
+            </p>
+        </li>
+    </ul>
+
+</div>
+</body>
+<div class="footer">
+    <!--<strong>You can run your code here.</strong>-->
+</div>
+
+</html>
